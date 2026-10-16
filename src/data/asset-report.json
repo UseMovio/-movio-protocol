@@ -1,0 +1,823 @@
+{
+  "files": {
+    "brand/LOGO MOVIO PNG...png": {
+      "width": 2000,
+      "height": 2000,
+      "format": "png",
+      "channels": 4,
+      "hasAlpha": true,
+      "ihdr": {
+        "width": 2000,
+        "height": 2000,
+        "bitDepth": 8,
+        "colourType": 6,
+        "interlace": 0
+      },
+      "alpha": {
+        "transparent": 3718218,
+        "opaque": 257174,
+        "partial": 24608
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 3718218,
+        "pureBlack": 3718218
+      },
+      "dominant": [
+        {
+          "bucket": "#b8f088",
+          "count": 34752
+        },
+        {
+          "bucket": "#c0f088",
+          "count": 14553
+        },
+        {
+          "bucket": "#b8f080",
+          "count": 1248
+        },
+        {
+          "bucket": "#c8f890",
+          "count": 1159
+        },
+        {
+          "bucket": "#c0f890",
+          "count": 930
+        },
+        {
+          "bucket": "#c0f888",
+          "count": 598
+        }
+      ]
+    },
+    "brand/LOGO MOVIO PNG.png": {
+      "width": 2000,
+      "height": 2000,
+      "format": "png",
+      "channels": 4,
+      "hasAlpha": true,
+      "ihdr": {
+        "width": 2000,
+        "height": 2000,
+        "bitDepth": 8,
+        "colourType": 6,
+        "interlace": 0
+      },
+      "alpha": {
+        "transparent": 0,
+        "opaque": 4000000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#102018",
+          "count": 743954
+        },
+        {
+          "bucket": "#c0f088",
+          "count": 29355
+        },
+        {
+          "bucket": "#b8f088",
+          "count": 18789
+        },
+        {
+          "bucket": "#c0f890",
+          "count": 1121
+        },
+        {
+          "bucket": "#c0f090",
+          "count": 918
+        },
+        {
+          "bucket": "#c0f888",
+          "count": 761
+        }
+      ]
+    },
+    "brand/LOGO MOVIO JPG.jpg.jpeg": {
+      "width": 2000,
+      "height": 2000,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 4000000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#102018",
+          "count": 743933
+        },
+        {
+          "bucket": "#c0f088",
+          "count": 29925
+        },
+        {
+          "bucket": "#b8f088",
+          "count": 17536
+        },
+        {
+          "bucket": "#c0f890",
+          "count": 1017
+        },
+        {
+          "bucket": "#c0f090",
+          "count": 972
+        },
+        {
+          "bucket": "#c0f888",
+          "count": 826
+        }
+      ]
+    },
+    "reference/SAMPUL MOVIO JPG.jpg.jpeg": {
+      "width": 1500,
+      "height": 500,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 750000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#001008",
+          "count": 92927
+        },
+        {
+          "bucket": "#102818",
+          "count": 24145
+        },
+        {
+          "bucket": "#102810",
+          "count": 17095
+        },
+        {
+          "bucket": "#001808",
+          "count": 3465
+        },
+        {
+          "bucket": "#c0f888",
+          "count": 2612
+        },
+        {
+          "bucket": "#082010",
+          "count": 2002
+        }
+      ]
+    },
+    "reference/MOVIO 1.jpg.jpeg": {
+      "width": 1600,
+      "height": 900,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 1440000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#001000",
+          "count": 236573
+        },
+        {
+          "bucket": "#001008",
+          "count": 6600
+        },
+        {
+          "bucket": "#000800",
+          "count": 2456
+        },
+        {
+          "bucket": "#001800",
+          "count": 1664
+        },
+        {
+          "bucket": "#c8f880",
+          "count": 963
+        },
+        {
+          "bucket": "#c8f888",
+          "count": 939
+        }
+      ]
+    },
+    "reference/MOVIO 2.jpg.jpeg": {
+      "width": 1600,
+      "height": 900,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 1440000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#001000",
+          "count": 241674
+        },
+        {
+          "bucket": "#001008",
+          "count": 5545
+        },
+        {
+          "bucket": "#000800",
+          "count": 2120
+        },
+        {
+          "bucket": "#001800",
+          "count": 1126
+        },
+        {
+          "bucket": "#c8f880",
+          "count": 897
+        },
+        {
+          "bucket": "#103800",
+          "count": 831
+        }
+      ]
+    },
+    "reference/MOVIO 3.jpg.jpeg": {
+      "width": 1600,
+      "height": 900,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 1440000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#001000",
+          "count": 238483
+        },
+        {
+          "bucket": "#001008",
+          "count": 5969
+        },
+        {
+          "bucket": "#000800",
+          "count": 2446
+        },
+        {
+          "bucket": "#001800",
+          "count": 1368
+        },
+        {
+          "bucket": "#c8f880",
+          "count": 910
+        },
+        {
+          "bucket": "#103800",
+          "count": 831
+        }
+      ]
+    },
+    "reference/MOVIO 4.jpg.jpeg": {
+      "width": 1600,
+      "height": 900,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 1440000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#001000",
+          "count": 241384
+        },
+        {
+          "bucket": "#001008",
+          "count": 5381
+        },
+        {
+          "bucket": "#000800",
+          "count": 2225
+        },
+        {
+          "bucket": "#001800",
+          "count": 1274
+        },
+        {
+          "bucket": "#c8f880",
+          "count": 914
+        },
+        {
+          "bucket": "#103800",
+          "count": 830
+        }
+      ]
+    },
+    "reference/MOVIO 5.jpg.jpeg": {
+      "width": 1600,
+      "height": 900,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 1440000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#001000",
+          "count": 241326
+        },
+        {
+          "bucket": "#001008",
+          "count": 5207
+        },
+        {
+          "bucket": "#000800",
+          "count": 2218
+        },
+        {
+          "bucket": "#001800",
+          "count": 1190
+        },
+        {
+          "bucket": "#c8f880",
+          "count": 914
+        },
+        {
+          "bucket": "#103800",
+          "count": 830
+        }
+      ]
+    },
+    "reference/MOVIO 6.jpg.jpeg": {
+      "width": 1600,
+      "height": 900,
+      "format": "jpeg",
+      "channels": 3,
+      "hasAlpha": false,
+      "ihdr": null,
+      "alpha": {
+        "transparent": 0,
+        "opaque": 1440000,
+        "partial": 0
+      },
+      "blackUnderAlpha0": {
+        "transparentPx": 0,
+        "pureBlack": 0
+      },
+      "dominant": [
+        {
+          "bucket": "#001000",
+          "count": 239647
+        },
+        {
+          "bucket": "#001008",
+          "count": 5510
+        },
+        {
+          "bucket": "#000800",
+          "count": 2532
+        },
+        {
+          "bucket": "#001800",
+          "count": 1265
+        },
+        {
+          "bucket": "#c8f880",
+          "count": 932
+        },
+        {
+          "bucket": "#103800",
+          "count": 832
+        }
+      ]
+    }
+  },
+  "palette": {
+    "lime": {
+      "role": "brand mark fill",
+      "hex": "#bff68c",
+      "source": "brand/LOGO MOVIO PNG.png",
+      "x": 716,
+      "y": 664,
+      "method": "k-means k=3, snapped"
+    },
+    "leaf": {
+      "role": "3D mark lit face",
+      "hex": "#89d042",
+      "source": "reference/MOVIO 1.jpg.jpeg",
+      "x": 1338,
+      "y": 666,
+      "method": "k-means k=8, snapped"
+    },
+    "forest": {
+      "role": "3D mark shaded face",
+      "hex": "#3a6f17",
+      "source": "reference/MOVIO 1.jpg.jpeg",
+      "x": 1452,
+      "y": 390,
+      "method": "k-means k=8, snapped"
+    },
+    "ink": {
+      "role": "page ground",
+      "hex": "#02160a",
+      "source": "reference/SAMPUL MOVIO JPG.jpg.jpeg",
+      "x": 0,
+      "y": 0,
+      "method": "k-means k=5, snapped"
+    },
+    "surface": {
+      "role": "panel ground",
+      "hex": "#16211b",
+      "source": "brand/LOGO MOVIO PNG.png",
+      "x": 0,
+      "y": 0,
+      "method": "k-means k=3, snapped"
+    },
+    "line": {
+      "role": "maze stroke",
+      "hex": "#142d18",
+      "source": "reference/SAMPUL MOVIO JPG.jpg.jpeg",
+      "x": 32,
+      "y": 0,
+      "method": "k-means k=5, snapped"
+    },
+    "text": {
+      "role": "body copy",
+      "hex": "#d4e0d6",
+      "source": "reference/MOVIO 1.jpg.jpeg",
+      "x": 258,
+      "y": 524,
+      "method": "k-means k=12, snapped"
+    }
+  },
+  "kmeans": {
+    "logo": [
+      {
+        "hex": "#16211b",
+        "x": 0,
+        "y": 0,
+        "share": 0.930748,
+        "rgb": [
+          22,
+          33,
+          27
+        ]
+      },
+      {
+        "hex": "#bff68c",
+        "x": 716,
+        "y": 664,
+        "share": 0.066852,
+        "rgb": [
+          191,
+          246,
+          140
+        ]
+      },
+      {
+        "hex": "#6e885b",
+        "x": 1352,
+        "y": 916,
+        "share": 0.0024,
+        "rgb": [
+          110,
+          136,
+          91
+        ]
+      }
+    ],
+    "banner": [
+      {
+        "hex": "#02160a",
+        "x": 0,
+        "y": 0,
+        "share": 0.3597653333333333,
+        "rgb": [
+          2,
+          22,
+          10
+        ]
+      },
+      {
+        "hex": "#05170b",
+        "x": 60,
+        "y": 0,
+        "share": 0.301328,
+        "rgb": [
+          5,
+          23,
+          11
+        ]
+      },
+      {
+        "hex": "#142d18",
+        "x": 32,
+        "y": 0,
+        "share": 0.29869866666666667,
+        "rgb": [
+          20,
+          45,
+          24
+        ]
+      },
+      {
+        "hex": "#c0f88b",
+        "x": 598,
+        "y": 196,
+        "share": 0.03632,
+        "rgb": [
+          192,
+          248,
+          139
+        ]
+      },
+      {
+        "hex": "#86ac63",
+        "x": 586,
+        "y": 302,
+        "share": 0.003888,
+        "rgb": [
+          134,
+          172,
+          99
+        ]
+      }
+    ],
+    "slide1": [
+      {
+        "hex": "#011307",
+        "x": 0,
+        "y": 0,
+        "share": 0.873227215980025,
+        "rgb": [
+          1,
+          19,
+          7
+        ]
+      },
+      {
+        "hex": "#aff362",
+        "x": 1356,
+        "y": 279,
+        "share": 0.029831460674157304,
+        "rgb": [
+          175,
+          243,
+          98
+        ]
+      },
+      {
+        "hex": "#c8f58e",
+        "x": 291,
+        "y": 345,
+        "share": 0.028152309612983772,
+        "rgb": [
+          200,
+          245,
+          142
+        ]
+      },
+      {
+        "hex": "#193e08",
+        "x": 1233,
+        "y": 468,
+        "share": 0.02109238451935081,
+        "rgb": [
+          25,
+          62,
+          8
+        ]
+      },
+      {
+        "hex": "#3a6f17",
+        "x": 1452,
+        "y": 390,
+        "share": 0.016579275905118603,
+        "rgb": [
+          58,
+          111,
+          23
+        ]
+      },
+      {
+        "hex": "#89d042",
+        "x": 1338,
+        "y": 666,
+        "share": 0.014288389513108615,
+        "rgb": [
+          137,
+          208,
+          66
+        ]
+      },
+      {
+        "hex": "#cedad0",
+        "x": 546,
+        "y": 561,
+        "share": 0.008976279650436954,
+        "rgb": [
+          206,
+          218,
+          208
+        ]
+      },
+      {
+        "hex": "#648f47",
+        "x": 1341,
+        "y": 447,
+        "share": 0.007852684144818977,
+        "rgb": [
+          100,
+          143,
+          71
+        ]
+      }
+    ],
+    "slide1Text": [
+      {
+        "hex": "#011307",
+        "x": 0,
+        "y": 0,
+        "share": 0.8727361111111112,
+        "rgb": [
+          1,
+          19,
+          7
+        ]
+      },
+      {
+        "hex": "#caf790",
+        "x": 258,
+        "y": 32,
+        "share": 0.025180555555555557,
+        "rgb": [
+          202,
+          247,
+          144
+        ]
+      },
+      {
+        "hex": "#b8f76b",
+        "x": 1280,
+        "y": 436,
+        "share": 0.01971388888888889,
+        "rgb": [
+          184,
+          247,
+          107
+        ]
+      },
+      {
+        "hex": "#173c08",
+        "x": 1368,
+        "y": 500,
+        "share": 0.019197222222222223,
+        "rgb": [
+          23,
+          60,
+          8
+        ]
+      },
+      {
+        "hex": "#336714",
+        "x": 1466,
+        "y": 448,
+        "share": 0.014558333333333333,
+        "rgb": [
+          51,
+          103,
+          20
+        ]
+      },
+      {
+        "hex": "#a2eb53",
+        "x": 1322,
+        "y": 544,
+        "share": 0.01446111111111111,
+        "rgb": [
+          162,
+          235,
+          83
+        ]
+      },
+      {
+        "hex": "#83ca3e",
+        "x": 1434,
+        "y": 650,
+        "share": 0.011419444444444444,
+        "rgb": [
+          131,
+          202,
+          62
+        ]
+      },
+      {
+        "hex": "#d4e0d6",
+        "x": 258,
+        "y": 524,
+        "share": 0.0076638888888888885,
+        "rgb": [
+          212,
+          224,
+          214
+        ]
+      },
+      {
+        "hex": "#549227",
+        "x": 1476,
+        "y": 322,
+        "share": 0.006913888888888889,
+        "rgb": [
+          84,
+          146,
+          39
+        ]
+      },
+      {
+        "hex": "#abc596",
+        "x": 364,
+        "y": 860,
+        "share": 0.003275,
+        "rgb": [
+          171,
+          197,
+          150
+        ]
+      },
+      {
+        "hex": "#63755b",
+        "x": 1210,
+        "y": 402,
+        "share": 0.0024972222222222223,
+        "rgb": [
+          99,
+          117,
+          91
+        ]
+      },
+      {
+        "hex": "#8ea87b",
+        "x": 880,
+        "y": 362,
+        "share": 0.0023833333333333332,
+        "rgb": [
+          142,
+          168,
+          123
+        ]
+      }
+    ]
+  },
+  "premultiplied": true
+}

@@ -1,0 +1,3446 @@
+Maze Runner — The Gardens MAZE RUNNER Entering the maze Preparing the garden… 00 Try again ↗ THE GARDENS / FIND YOUR WAY Enable JavaScript to enter Maze Runner. MAZE RUNNER CONNECTING The Courtyard W N E 0% explored X 00 / Y 00 CA 2Y26CH…h4maze Copy Token contract address Clipboard unavailable. Select and copy the full address above. Map M Shop Wallet Menu Loading… GHOST PREVIEW You’re exploring as a ghost. Sign in with X to collect drops and play. Enter Game ↗ ✦ Explore. Team up. Defend the garden. Press J for your expedition. × WASD Move Aim Fire Controls ? LOCAL MAP N You & runners M Expand Active drop RUN GET YOUR BEARINGS The Gardens × ↑ N You Runners Active drop ◇ Activities Start Explored Show all paths Your adventure is just beginning. Return to courtyard ↗ YOUR EXPEDITION Game menu × Missions & activities J Capture the Flag Play or watch ↗ Your wallet &amp; rewards Season Spring bloom Spring Summer Autumn Winter Read the field guide ↗ Controls, activities &amp; game mechanics Controls & rules Replay guided tutorial Find a stock coin. Hold E to collect it. Three hits send a runner back to the courtyard. Move W A S D or ↑ ← ↓ → Sprint SHIFT Aim / strafe Hold right click · Q toggles Fire weapon Left click while aiming / SPACE Reload weapon R Throw grenade G Jump / vault F Collect drop HOLD E Look around Click and drag Touch aim Drag the garden, then tap Fire Camera distance Scroll Expedition journal J Use activity station T Revive / awaken beacon HOLD H Squad rally ping P Open map M Menu ESC Walk to a spot Click a path Reload with R, or automatically when empty. Grenades bought in the shop are thrown with G; each throw uses one charge. Firing, reloading and taking a hit interrupt collection. A 3-second shield protects respawns; firing ends it. Health recovers after 8 seconds. Resume game ESC Return to courtyard Enable JavaScript to explore Maze Runner.
+Maze startup failed
+Check your connection and graphics acceleration, then try again.
+Courtyard sanctuary
+Blackjack · Table 1
+Blackjack · Table 2
+Invalid chip amount
+The Runner’s Trial
+Target Practice
+Shambler Zombie
+Runner Zombie
+Brute Zombie
+Zombie skin has invalid bounds
+Nightfall zombie
+Rolling ash clouds
+Distant thunderbolt
+Dragon breath and burning patches
+Mouth flame jet
+Wind driven storm rain
+#include <map_fragment>
+Hunched torso
+Sunken human face
+Slack jaw
+Dragging left leg
+Right leg
+Left reaching arm
+Right reaching arm
+CAPTURE THE FLAG
+THREE ARENAS · 1V1 / 2V2 / 3V3
+The gardens · adventure
+Nightfall moon
+<p class="ctf-online-empty">No other runners online yet. Your open match is visible to everyone in the garden.</p>
+Capture the Flag invitations
+Accept ↗
+Invalid arena stake.
+practice chips
+Checking balance…
+Cancel ready
+Ready to play ✓
+Returning stakes…
+Add chips to ready
+SOL-BACKED CHIPS
+PRACTICE CHIPS
+Equal stakes from every runner. Free matches are always available.
+Stakes are reconnecting. Free matches are available.
+<p class="ctf-practice-note">Practice chips have no cash value.</p>
+Match stake
+SOL-BACKED MATCH
+PRACTICE CHIP MATCH
+<button data-act="add-chips" class="ctf-secondary">Add chips ↗</button>
+Returning your stake…
+Settling the pot…
+Your stake was returned
+Winnings added to your chips
+Your stake went to the winning team
+<span class="ctf-loader"></span>
+Your result is saved. The balance updates after settlement.
+<p>Practice chips have no cash value.</p>
+Red team
+Blue team
+Ready up or leave the lineup
+You’re ready. Waiting for both teams.
+Press Ready to join the starting lineup
+The ready check begins when both teams are full. Everyone ready starts a 3-second countdown.
+Both teams accepted. Securing the pot.
+Every stake is reserved together before the countdown. You can cancel ready before play starts.
+Bring their flag to your base.
+Return your own flag before you can score.
+Recover your flag. Protect the route home.
+Overtime. The next capture wins.
+Take their flag. Bring it home. First to three wins.
+<tr><td colspan="4">Waiting for runners</td></tr>
+<canvas class="ctf-map-art" width="680" height="352" data-ctf-map="${sr(e)}" data-view="${sr(t)}" role="img" aria-label="${sr(fr(e).name)} arena, ${sr(t)} view"></canvas>
+<img src="/portraits/${e.characterId}.webp" alt="" loading="lazy" />
+Not ready yet
+Capture the Flag
+Inspect arena
+The arena preview could not load. Close and try again.
+CTF map preview unavailable
+Close arena preview
+Capture the Flag arena. WASD move, right mouse aim, left mouse or Space fire, F jump, R reload.
+Leaving before play starts cancels the countdown and returns all reserved stakes.
+Your team will continue without you.
+THE GARDENS / TEAM ARENAS
+Rejoin lineup ↗
+Creating match…
+Create match ↗
+Enter Game to play ↗
+Gathering runners
+Match finished
+In progress
+Watch ↗
+<div class="ctf-empty"><span>◇</span><div><b>Start the next rivalry.</b><p>No open teams yet. Create a match and invite a friend to join.</p></div></div>
+Assemble your team
+THE NEXT RUN IS YOURS
+EVENLY MATCHED
+A hard-fought draw
+Won by forfeit — the opposing team left.
+The clock expired. Highest capture count wins.
+Still tied after overtime.
+The deciding capture in overtime.
+Three flags brought home.
+The opposing team left the match.
+The match has ended.
+STARTING SOON
+NEXT CAPTURE WINS
+FIRST TO 3
+WAITING FOR TEAMS
+LIVE LOBBY
+Spectating · Arena overview
+At base
+<option value="">Choose a runner</option>
+This invitation is no longer available.
+face down
+Split aces
+<span class="pov-card is-back" role="img" aria-label="Face-down card"><i aria-hidden="true">◇</i></span>
+Free play chips have no cash value.
+Queued for payout
+Signing transfer
+Sent to Solana
+Paid to your wallet
+Returned to your chips
+Held for review
+Privy wallet
+Recent cash-outs
+<a href="https://solscan.io/tx/${encodeURIComponent(e.signature)}" target="_blank" rel="noopener noreferrer">View ↗</a>
+You already have a seat
+The dealer is dealing
+Dealer shows an ace
+Your hands are settled
+Hand complete
+Your move
+Your bet is ready
+Choose your seat
+Choose your bet
+Connecting to the table
+<p>Finding a place for you…</p>
+<p>Five seats. One dealer. Take your place.</p>
+<p>Watch your cards arrive.</p>
+pov-button is-primary
+You’re insured.
+Insurance declined.
+You’re seated for the next hand.
+pov-button is-secondary
+Double your bet and take one final card
+Split equal-value cards into two hands
+<button class="pov-surrender" data-action="table-surrender">Surrender · keep half your bet</button>
+You stood. The hand continues.
+Your hand busted. The table is finishing.
+You surrendered. Half your bet returns when this round settles.
+Your turn will be highlighted.
+Your chip balance is shared between both tables
+Cards are dealt one at a time
+The dealer checks for blackjack before any moves
+Choose your bet for the next hand
+Select an open place at the table
+Everyone plays against the dealer
+No cards dealt yet.
+YOUR HAND
+The garden is changing. Defend it together.
+Escape the fire
+Orange lanes and circles warn before fire strikes. Sprint sideways or get behind a wall.
+Ground the dragons
+Two runners hold different beacons for 6 seconds. Their linked light protects both holders. Every living dragon lands for 14 seconds and its fires clear.
+Shoot the exposed cores
+Flying dragons are armored. Shoot their glowing chest cores while they are grounded.
+Help each other
+Weapons cannot hurt other runners during the storm. Hold beside a fallen runner for 4 seconds to revive them.
+The courtyard and card lounge stay safe. Your existing equipment and shields still work.
+Defeat every dragon before 2 minutes expire. Damage, completed beacon charges and rescues earn contribution rewards.
+Prepare to defend the garden
+The garden is defended
+The storm is passing
+Cores exposed — fire now!
+Flying dragons are armored
+Grounding dragons
+Two runners · charge both beacons
+Co-op · friendly fire off
+Ghost view · enter the game to help
+You’re down · nearby runners can revive you
+Courtyard shelter · weapons disabled
+Linked ward protects you · keep holding
+GET OUT OF THE FIRE
+Sprint to clear ground or behind a wall.
+FIRE INCOMING
+Sprint out of the orange warning.
+Flying dragons are armored. Friendly fire is off. Both beacon holders are warded only while charging together.
+You’re watching as a ghost. Enter the game to fight, charge beacons or revive.
+Damage, completed beacon charges and rescues count toward contribution rewards.
+DRAGONSTORM ENDED
+The garden is yours again.
+The storm has passed.
+The remaining dragons escaped.
+· Well played, runners.
+. Charge the beacons and focus exposed cores next time.
+Dismiss Dragonstorm result
+Your expedition
+Open expedition journal
+Clear marked route
+Show the Nightfall encounter
+Challenge result
+First-person view from your seat at the blackjack table
+The Card Table
+Garden activity
+COURTYARD LOUNGE
+EXPEDITION CLUB
+<button data-action="accept" data-id="${si(e.id)}">Accept mission ↗</button>
+Survive the zombie siege
+Test your aim
+Fight zombies and revive teammates
+5 moving targets · 30 seconds
+<p class="adventure-muted">Connecting your expedition record…</p>
+noopener noreferrer
+In the garden
+Find a partner and take one beacon each. Hold H together for six seconds to restore the garden’s energy. You can cooperate with any runner.
+Practice run · reward earned this cycle
+XP + SALVAGE
+Set your first time
+2 RUNNERS
+SOLO CHALLENGE
+<p class="challenge-reward-note">Keep chasing a faster time. XP and salvage become available again next garden cycle.</p>
+Find a partner
+Saving your run…
+Beat your best
+Start challenge
+<button class="adventure-primary" data-action="enter">Enter Game ↗</button>
+Salvage workshop
+The table is taking longer than expected. Reconnect to try again.
+TIME IS UP
+One more run?
+Practice complete · no repeat rewards this cycle
+Aim at the target centers. You have thirty seconds.
+Follow each checkpoint in order. Sprint on the straights.
+Target practice
+Runner’s trial
+Hold E to claim · stay still
+Dodge the attack arcs · help other runners
+You’re here · press T to begin
+TIMED CHALLENGE
+YOUR ROUTE
+.expedition-copy strong
+Open missions and activities
+.expedition-route span
+ROUTE MARKED
+.expedition-xp i
+.expedition-phase span
+Garden defended ✓
+Waiting for runners
+.expedition-phase time
+Hold H · stay close
+Hold H · two runners, one beacon each
+Choose a seat · check table rules
+Dragonstorm rules & status
+Explore this activity
+Dragonstorm encounter
+Time remaining
+Dragonstorm result
+.storm-arrival strong
+Exposed core window
+Beacon charge
+.storm-beacon-meter i
+Dragonstorm defeated. The garden is safe again.
+Dragonstorm ended. The remaining dragons have left the garden.
+Dragons grounded. Shoot their glowing chest cores now.
+A dragon is defeated. Keep charging the beacons for the remaining dragons.
+Dragonstorm is live. Dodge marked fire and charge both beacons.
+Close welcome and explore as a ghost
+Play introduction
+Pause introduction
+Video time
+Turn on video sound
+Watch the trailer
+Replay introduction
+Mute video sound
+Choose your character
+Choose a character. Learn the controls. Then make your entrance.
+Find your way. Meet the runners. Make your move.
+A minute of practice. A whole maze to explore.
+Find your feet
+Walk, sprint, look around, then try a jump.
+Make every shot count
+Aim at the practice target, fire, then reload.
+Find your first stock
+Collect one to continue. Stay and find all three if you like.
+Choose your next adventure
+Three places to know before you head out.
+You’re ready to run
+Find a drop. Join a team. Make the garden yours.
+Maze Runner
+Explore the game
+.tutorial-joystick i
+All three collected. Ready for the garden.
+Stock collected. Keep exploring or continue.
+Nice work. You’ve got it.
+.tutorial-claim-track i
+.tutorial-claim button
+Hold to collect
+All practice stocks collected
+Walk up to a stock coin
+Use the left stick. Tap Sprint to run faster. Drag to look. Tap Jump.
+<span><kbd>WASD</kbd> or arrows</span><span><kbd>Shift</kbd> Hold to sprint</span><span>Drag to look</span><span><kbd>F</kbd> Jump</span>
+Tap Aim, drag to line up the target, then Fire and Reload.
+In the maze, moving or taking a hit interrupts a claim. The first completed claim wins.
+<span class="tutorial-intro-time">≈ 1 MINUTE</span> Move · Sprint · Aim · Collect
+Next, sign in with X to play with everyone or explore freely as a ghost.
+WELCOME, RUNNER
+BASICS COMPLETE
+Let’s begin →
+Back to the game →
+Choose how to enter →
+Enter the garden →
+Ready to run →
+Continue →
+Return to character selection
+Close tutorial
+BEING CLAIMED
+· DEMO
+icon-button square sound-button
+Sound settings
+Unmute sound effects
+Mute sound effects
+Sound off · click to unmute
+Mute effects
+Pause music
+Play music
+Enter the game before joining voice.
+Voice needs a supported browser and a secure connection.
+Microphone permission was not granted. You can join again when ready.
+No microphone was found. Connect one and join again.
+Your browser does not support this voice connection.
+The microphone could not start. Check its permission and try again.
+Voice is unavailable. Please try again.
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8.5" y="2.5" width="7" height="12" rx="3.5"/><path d="M5.5 10.5v1a6.5 6.5 0 0 0 13 0v-1M12 18v3.5M8.5 21.5h7"/></svg>
+Voice controls need a chat container.
+Nearby voice
+Join proximity voice
+Sound on
+Hold to talk · V
+Press and hold to talk to nearby players
+Microphone access starts only when you choose Join.
+Mic on · V to mute
+Voice volume
+Nearby voice output volume
+Within earshot
+Nearby voice participants
+No one in voice nearby yet.
+Hold to talk
+Mic off
+Hold V or press and hold this button to talk to nearby players
+Cancel microphone setup
+Leave voice
+Enter Game to join voice
+Reconnect to join voice
+Voice unavailable in this browser
+Enable sound
+Enable nearby voice playback
+Mute nearby voice playback and your microphone
+Choose Allow in the browser prompt, or cancel here.
+Nearby voice and your microphone are muted.
+Close the panel, then hold V or the mic button to talk.
+Your mic is live to nearby runners. Release to stop.
+Mic off until you hold V. Release to stop. Up to 8 nearby runners.
+Connecting nearby voice…
+Talk to runners within 4 blocks. Your mic is sent only while you hold V.
+Mic muted · V to unmute
+Enable sound to talk
+Mic paused while a panel is open
+Mic live · V to mute
+Connecting voice…
+Talking · release to mute
+Close panel to talk
+Voice deafened
+Release to mute
+Enable sound in Chat
+Sidearm bullets and impacts
+Respawn shield
+Sidearm, ammunition and health
+Fire sidearm. Hold to repeat. Space keyboard shortcut.
+Reload sidearm. R keyboard shortcut.
+Sidearm reload
+Jump or vault a low barrier. F keyboard shortcut.
+combat-vault combat-grenade
+3 hits return you to the courtyard.
+<svg viewBox="0 0 40 40" fill="none"><path d="m8 8 7 7m10 10 7 7M32 8l-7 7M15 25l-7 7"/></svg>
+Machine gun
+Waiting for reload confirmation
+Empty · reload
+Hit confirmed.
+Courtyard reset
+Downed. A teammate can revive you.
+Back to the courtyard. Respawn shield active.
+Thrown grenades and dust
+Transfer confirmed
+Add a Solana wallet to receive
+Transfer pending
+View transaction ↗
+DEMO DROPS
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h14v15H5zM8 2h14v15M8 9h8M8 13h5"/></svg><span>Collection</span>
+Wallet ↗
+Nearby stock drop
+Hold to claim
+Hold for 5 seconds. Stay close to the drop.
+reward-dialog collection-dialog
+FINDS FROM THE GARDEN
+Your collection.
+Close collection
+Manage wallet ↗
+reward-dialog reveal-dialog
+FOUND IN THE GARDEN
+A new find.
+Close reward reveal
+reward-card-face reward-card-back
+MAZE RUNNER
+A GARDEN FIND
+YOUR DROP IS OPENING
+reward-card-face reward-card-front
+Keep exploring ↗
+View collection
+Securing drop…
+STOCK DROPS
+· DEMO DROP
+Another player is claiming
+Keep holding…
+Enter Game to collect ↗
+Space fires your sidearm. Hits interrupt a rival’s claim.
+Hold for 5 seconds. Firing, reloading or getting hit interrupts collection.
+Sign in with X and choose a character to join the race.
+, demo only
+Enter game to collect this drop
+PURCHASE VALUE · USD
+Your first find is out there.
+Look for spinning stock coins in the maze. Get close, then hold E for five seconds.
+Demo drops are collectibles for testing. They do not transfer stock or money.
+Amounts show the approximate purchase value. Token value changes with the market. Payouts are complete only when confirmed.
+STOCK DROP CLAIMED
+DEMO VALUE
+Added to your demo collection. No real stock or money was transferred.
+Your Solana transfer is confirmed. Token value changes with the market.
+Follow the transfer in your collection. Token value changes with the market.
+Drop claimed
+Preparing funded stock drops…
+New stock drops are temporarily paused.
+Funded stock drops are ready in the maze.
+Today’s reward budget is used. Existing drops remain available.
+Stock drops are being set up.
+Checking the reward vault…
+Rewards start when the vault is funded.
+A new drop follows a claim.
+Spawning a drop…
+A fresh location is on the way.
+Preparing the next drop
+Waiting for the stock purchase to confirm.
+Waiting for the vault
+A vault transaction is confirming.
+Waiting for vault funding
+New drops appear once stock is funded.
+Daily drop budget reached
+New purchases resume when the budget resets.
+Vault transaction needs review
+The vault’s last transaction needs to be checked before buying another stock.
+New drops are paused
+Live reward funding is switched off.
+New drops are on hold
+The vault needs attention before buying stock.
+Waiting for vault setup
+New drops resume once the vault is ready.
+New drops resume when the vault is available.
+Waiting for funded stock
+The next drop appears after its purchase confirms.
+View active drops
+Open chat and leaderboard
+Latest unread chat message
+NEW MESSAGE
+Dismiss message preview
+THE SHARED GARDEN
+Close chat and leaderboard
+Activity views
+Active stock drops
+How drops work
+community-dialog drops-dialog
+Active drops
+Close active drops
+Player leaderboard
+Refresh standings
+Garden chat
+Everyone in this garden shares this chat.
+Load chat history
+Chat messages
+Message the garden
+Message the garden…
+Enter Game to chat ↗
+Enter to send · Shift + Enter for a new line
+Enter Game to send messages.
+Reconnecting… Messages will resume shortly.
+Loading messages…
+Load missing messages
+Load older messages
+Could not load messages. Wait for the garden to reconnect.
+Messages took too long to load. Please try again.
+No messages yet. Say hello.
+No active drops right now.
+Waiting for the garden…
+Demo collectibles · values are simulated, with no cash value.
+Funded stock rewards · amounts show purchase value, not current market value.
+Checking the player count…
+Loading standings…
+Live rewards
+Demo standings · no cash value
+The first find takes the lead. Collect a drop to appear here.
+Recent game activity
+Live activity
+joined the game
+claimed
+Activity · reconnecting
+Spring bloom
+Golden summer
+Amber autumn
+Winter frost
+#include <project_vertex>
+Spatial architecture batch
+Preparing your runner
+Preparing ghost mode
+Shaping the stonework
+Laying the garden paths
+Bringing in the daylight
+Sign in with X to enter.
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span>Safe zone</span><small>Weapons disabled</small>
+Reconnecting to the shared garden…
+Everyone here shares this maze
+Movement resumes when the garden reconnects
+The Western Walk
+The Eastern Walk
+The Northern Paths
+The Southern Paths
+Choose a spot on a path.
+Leaving safe zone · weapons enabled.
+Ground dragons
+Summon Dragonstorm
+Preparing sign-in…
+Active power-ups
+Enter Game to take a seat at the table.
+Zombie siege cleared. The garden is safe again.
+Challenge complete. Check your expedition progress.
+Time is up. Visit the station to try again.
+Dragonstorm queued. Finish Nightfall first.
+The beacons are summoning Dragonstorm.
+Equipment added. Equip it in the Shop.
+Back on your feet. Stay together.
+The beacons are recovering. Try again after their cooldown.
+Zombies arrive at Nightfall. Rally at the marked garden.
+Nightfall zombies are here. Defend together—friendly fire is off.
+connection closed
+Your connection dropped. Please try entering again.
+Reconnecting you to the garden…
+Tagged out. Back in the courtyard with a 3-second shield.
+Back in the shared courtyard.
+Sign-in could not load. Refresh to try again.
+Refresh to sign in
+n).slice(0,6);for(let e=0;e
+=2?1.1:.62)));for(let e=0;e
+=2?3:6;for(let n=0;n
+`,`#include
+`adventure-weathered-stone-v1`;let u=new Uint8Array(65536);for(let e=0;e
+Math.max(0,Math.min(1,e)),o=Math.min(r+180,i);if(t
+1?`red`:`screen`,.42,e,.252,[.07,.045,.07]).rotation.x=Math.PI/2;i(`block`,`steel`,0,.69,.23,[1.24,.21,.028]),a(`bronze`,[-.22,.7,.275],[.22,.7,.275],.037);for(let e=0;e
+e.half*2)break;let d=!0;for(let t=0;t
+Math.abs(e.x-t.x)
+5)continue;let a=Math.max(1,Math.ceil(n/.15)),o=!0;for(let n=1;n
+=0;t--)this.fragments[t].life-=e,this.fragments[t].life
+e.distance
+String(e??``).replace(/[&
+e.phase===`lobby`&&e.playerCount
+e.id!==t&&!i.has(e.id)).slice(0,200),o=n?.phase===`lobby`&&i.size
+No other runners online yet. Your open match is visible to everyone in the garden.
+Decline
+t.id===e.id))return!0;let t=Math.max(0,Math.min(3e4,e.expiresAt-e.serverNow));return!Number.isFinite(t)||t
+=Wn.min&&e
+02 / MATCH STAKE
+Play your way
+Custom
+Chips per player
+Set stake
+Add chips ↗
+Practice chips have no cash value.
+Equal stakes. One winning team.
+Your stake
+Total pot
+Each winner receives
+Ready accepts this stake. Chips are reserved together only when everyone is ready. A draw or cancellation before play returns all stakes, with no fee.
+Leaving or disconnecting after play starts forfeits your team’s stake.
+Your balance
+e.playerId===t),c=Number.isSafeInteger(s?.chips)?s.chips:null;return`
+Math.max(t,Math.min(n,Number(e)||0)),lr=`
+SECONDS
+Leave lineup
+captures
+Runner
+Captures
+Eliminations
+Returns
+`).join(``)||`
+`;return`
+RETURN TO THE GARDENS
+Leave this match?
+Keep playing
+Leave match ↗
+t.id===e)&&ae!==`game`&&(_=e,d.inert=!0,f.hidden=!1,f.innerHTML=`
+EXPLORE THE ARENA
+Actual arena geometry · blue and red mark the flag bases
+You missed the ready check
+Make the run. Cover your team.
+Bring the flag home.
+◷ 6 MINUTES
+↔ EQUAL LOADOUTS
+Choose your ground
+01 / ARENA
+See the routes before you ready up.
+03 / YOUR SQUAD
+Same carbine. Same chance.
+No shop perks inside the arena.
+Join or watch a match
+Refresh ↻
+Start the next rivalry.
+No open teams yet. Create a match and invite a friend to join.
+TEAM ARENA
+Inspect arena ↗
+e.team===t);return`
+Waiting for a runner
+Invite a runner
+They can accept from anywhere in the garden. Everyone readies up before the match.
+The objective
+Take the other team’s flag to your base. Your own flag must be home to score.
+The fight
+Equal carbines, no friendly fire. Flag carriers move slower. Respawn and get back in.
+CAPTURE
+THE FLAG
+GET TO YOUR STARTING LINE
+BACK IN THE FIGHT
+Respawning in
+Your team is counting on you.
+Return to the gardens
+HEALTH
+CARBINE
+Spawn protection
+WASD
+Move
+Aim
+Space
+Fire
+Jump
+Shift
+Sprint
+Reload
+FIRE
+Flag returns
+Back to the gardens
+Same teams. Fresh flags. Everyone must agree to the rematch.
+LIVE
+Spectating the arena
+You’re watching. No team slot or chips required.
+Arena overview
+Follow runner
+Choose a runner
+Leave view ↗
+MATCH COMPLETE
+Back to the gardens ↗
+If both teams start a rematch, your live view will continue. You stay a spectator.
+e?.cards?.length?`
+HOUSE DEALER
+Blackjack pays 3:2 · stands on 17
+`;let n=[`dealing`,`insurance`,`playing`].includes(t),r=n?[e.dealer?.[0]??null,null]:e.dealer||[],i=r.filter(Or),a=i.length?Ar(i):null;return`
+NEXT BET
+chips
+Place bet
+Choose a bet within your chip balance.
+Table rules
+Six decks
+The dealer stands on every 17, including soft 17.
+Blackjack pays 3:2
+Regular wins pay 1:1. A tied hand returns your bet.
+Double down
+Double your bet on two cards, then receive one final card. Also available after splitting.
+Split up to four hands
+Split matching card values for an equal extra bet. Split aces receive one card each and cannot split again. Split 21 pays 1:1.
+Insurance
+When the dealer shows an ace, insure for half your original bet. Insurance pays 2:1 only if the dealer has blackjack.
+Late surrender
+After the dealer checks for blackjack, surrender an original two-card hand to recover half your bet.
+0?t:Math.min(r.max,Math.max(r.min,e.chips||0)),c=(e.cashouts||[]).slice(0,4),l=a?o?`Finish the hand in play, then cash out.`:(e.chips||0)
+BALANCE
+Buy chips
+CASH OUT
+View ↗
+e.seat===r)||[];if(!i)return`
+Take a seat
+Open
+e.id===d?.turnHandId)||o[0];return`
+Reconnecting to the garden…
+`;else if(t)M=`
+Retry previous move ↻
+`;else if(!e)M=i?`
+Reconnect to table ↻
+Finding a place for you…
+`;else if(f==null)M=k?`
+Five seats. One dealer. Take your place.
+`;else if(v)M=`
+Watch your cards arrive.
+`;else if(b)M=x?.status===`pending`?`
+Protect your bet against dealer blackjack?
+No insurance
+Insure
+Hit
+Stand
+Double
+Split
+Surrender · keep half your bet
+`:e.chips
+Buy chips to play
+Refill 500 free chips ↻
+`:m?.ready?`
+THE COURTYARD CLUB
+Rules
+Wallet
+Taking you to the table…
+Shared table · 5 seats
+Leave seat ↗
+0&&Math.hypot(e.x-t.x,e.z-t.z)
+Number(e.warningEndsAt)
+Dodge marked fire
+Orange lanes and circles warn before fire strikes. Sprint sideways or find a wall.
+Break their armor
+Two runners hold different beacons for
+. Dragons land for
+— shoot their glowing chest cores.
+Keep runners alive
+Hold
+beside a fallen runner for
+. The courtyard and card lounge stay safe.
+MISSIONS
+Missions
+RUNNER LEVEL
+EXPERIENCE
+SALVAGE
+Your next adventure starts here.
+Join the garden to take on missions, team up against Nightfall zombies and earn equipment through play. You can also watch a live arena match as a ghost.
+Enter Game ↗
+Watch Capture the Flag ↗
+Well played
+`:e.accepted?`
+Tracking
+Accept mission ↗
+`).join(``),n=[`warning`,`nightfall`].includes(m.phase);return`
+Pick an activity
+01 / SPEED
+Beat your best run ↗
+12 checkpoints · 60 seconds · solo
+02 / EXPLORE
+Find a stock drop ↗
+Mark the nearest available drop
+Your missions
+New missions every 4 minutes. XP and salvage stay with you.
+Connecting your expedition record…
+Around the gardens
+Select a station to follow a route there.
+Better together.
+Bring up to three friends. Rally at a ping, activate the twin beacons, and survive the zombie siege together.
+INVITE CODE
+Copy
+Rally here
+Leave squad
+Create a squad ↗
+or join your friends
+Invite code
+Join squad
+Earn your next upgrade.
+Collect salvage from missions, activities and Nightfall. Equipment goes straight to your inventory; equip it in the Shop.
+salvage
+Open equipment & inventory ↗
+TWIN BEACONS / SHARED GARDEN ENCOUNTER
+Summon Dragonstorm.
+Rain, thunder and dragons turn the whole maze into a fight for the garden.
+2 RUNNERS TO SUMMON
+2 MINUTES TO DEFEND
+XP + SALVAGE FOR CONTRIBUTORS
+or the on-screen beacon button. Keep both beacons charged to expose every dragon’s core. One shared cooldown keeps the encounter special.
+Enter Game to help ↗
+GARDEN ACTIVITY
+PERSONAL BEST
+GOLD MEDAL
+Keep chasing a faster time. XP and salvage become available again next garden cycle.
+`:``;if(le.innerHTML=me()+(y===`journal`?he():``)+i+`
+=t.min&&e
+t.right||e.clientY
+You’re down. A runner can revive you.
+SHARED GARDEN ENCOUNTER
+Dragonstorm
+Find beacons
+`;let S=document.createElement(`div`);S.className=`storm-threat`,S.hidden=!0,S.setAttribute(`role`,`alert`),S.innerHTML=`
+THE BEACONS HAVE AWAKENED SOMETHING
+DEFEND THE GARDEN / TOGETHER
+ARRIVES IN
+The whole maze transforms. Defeat every dragon before two minutes run out.
+or the
+button to sprint.
+I’m ready
+This briefing closes before the dragons attack.
+`;let w=document.createElement(`aside`);w.className=`dragonstorm-rules-card`,w.hidden=!0,w.setAttribute(`aria-labelledby`,`storm-card-title`),w.innerHTML=`
+QUICK FIELD GUIDE
+How to defend the garden
+Dodge orange fire warnings. Two runners hold different beacons for 6s, then shoot the dragons’ exposed chest cores. Hold H to revive fallen runners; the courtyard is safe.
+Find the twin beacons
+Keep moving — the encounter is live.
+e.x+e.width/2+r||Math.max(t.z,n.z)
+e.center(t)),n],o=[t];for(let t=1;t
+The trailer couldn’t load. Your adventure is still ready.
+Sound off
+YOUR NEXT ADVENTURE
+Welcome to the maze.
+Discover in ghost mode
+PRACTICE · NO REAL REWARDS
+Skip tutorial
+Preparing your practice courtyard…
+Try again
+THE TRAINING GARDEN
+Shop & friends
+LEARN BY PLAYING
+Replay anytime from Menu
+MAP · M
+Pick a destination
+Stock coins mark active drops. Dots are other runners. Station symbols lead to activities.
+Open the map from the header anytime.
+`,l(e.querySelector(`canvas`))):e.innerHTML=C===`missions`?`
+BLUE TEAM
+RED TEAM
+MISSIONS · J
+More than a race
+Follow Missions for routes, trials and squad activities.
+At Capture the Flag, create or join a match and invite online players. Bring their flag home while defending yours.
+YOUR NEXT UPGRADE
+YOUR NEXT TEAMMATE
+SHOP & COMMUNITY
+Build your loadout
+Use Shop for equipment and inventory. Review the price before you buy.
+Open Chat to talk, use voice or check the leaderboard. Your X profile identifies you. Stock rewards go to the wallet you chose.
+or arrows
+Hold to sprint
+Drag to look
+`:f===`combat`?e?`Tap Aim, drag to line up the target, then Fire and Reload.`:`
+/ Space
+`:f===`collect`?`In the maze, moving or taking a hit interrupts a claim. The first completed claim wins.`:f===`intro`?`
+≈ 1 MINUTE
+-1&&this.screen.z
+`,t.innerHTML+=`
+`;let n=document.createElement(`section`);n.className=`audio-settings`,n.setAttribute(`aria-label`,`Sound settings`),n.innerHTML=`
+Sound effects
+Soft footsteps
+Drops, sidearms &amp; discoveries. Ghosts move silently.
+Preview sound
+Background music
+Quiet garden instrumentals. Music softens during voice chat.
+=e.duration);a||=this.effects.length
+t.bornAt
+i||(this.pending.splice(e,1),i-t.at
+=n,e.classList.toggle(`is-filled`,t
+t?`Ready`:W()===0?`Press R to reload`:W()
+Collection
+n.right||t.clientY
+240||Date.now()
+100||!Number.isFinite(e.at)||e.at
+r?i.geometry=o:i.geometry===o&&s
+0?.385*Math.sqrt(Math.max(0,1-c*c)):.385+.15*l**3+.024*Math.sin(l*Math.PI);for(let c=0;c
+#include
+`,` #include
+Math.abs(e.x-i.x)
+e.depth;this.mesh(c,o,e.x,2.2,e.z).scale.set(.28,4.4,.28),this.mesh(c,o,e.x,4.16,e.z).scale.set(t?3.6:.18,.18,t?.18:3.6);for(let n=-1;n
+1e-4&&(this.nightfall=u.lerp(this.nightfall,this.nightfallTarget,1-Math.exp(-Math.max(0,e)*(r?2:.8))),Math.abs(this.nightfallTarget-this.nightfall)
+1e-4&&(this.dragonstorm=u.lerp(this.dragonstorm||0,o,1-Math.exp(-Math.max(0,e)*(r?1.4:.65))),Math.abs(o-this.dragonstorm)
+0)&&this.applyAtmosphere(),this.previousStormFlash=this.stormFlash,this.particles.visible=!r&&(this.dragonstorm||0)
+t.depth;for(let n=0;n
+new p(i+(e?Math.sin(t*2.4+c)*.08:r*.035),t,o+(e?r*.035:Math.sin(t*2.4+c)*.08)),u=at+.06;for(let e=0;e
+.5?1:-1;for(let i=0;i
+.5?1:-1,i=t.x+(e?n:r*.36),o=t.z+(e?r*.36:n);for(let e=0;e
+1e3)&&(r=this.previous.time+Math.max(1,t-this.previous.arrival),this.anchor=e-r),this.previous&&r
+2&&e[1].time
+Math.hypot(e.x-n.x,e.z-n.z)
+0,grounded:_
+$&&(ss||cs||performance.now()
+Safe zone
+Weapons disabled
+0||!(e.ammo
+Math.abs(r)?n
+e.downed&&Math.hypot(e.x-X.x,e.z-X.z)
+!e.active&&Math.hypot(e.x-X.x,e.z-X.z)
+_&&x&&Math.hypot(X.x-x.x,X.z-x.z)
+Still finding a way in
+THREE.MathUtils: Invalid component type.
+THREE.Vector2: index is out of range:
+THREE.Vector3: index is out of range:
+THREE.Vector4: index is out of range:
+Object3D.add: object can't be added as a child of itself.
+Object3D.add: object not an instance of THREE.Object3D.
+Color: Alpha component of
+will be ignored.
+THREE.BufferAttribute: array should be a Typed Array.
+SkinnedMesh: Unrecognized bindMode:
+Skeleton: Number of inverse bone matrices does not match amount of bones.
+Skeleton: No bone found with UUID:
+THREE.DepthTexture: format must be either THREE.DepthFormat or THREE.DepthStencilFormat
+ExtrudeGeometry: vec does not exist
+THREE.Interpolant: Call to abstract method.
+THREE.KeyframeTrack: track name is undefined
+THREE.KeyframeTrack: no keyframes in track named
+unsupported interpolation for
+keyframe track named
+KeyframeTrack: Invalid value size in track.
+KeyframeTrack: Track is empty.
+KeyframeTrack: Time is not a valid number.
+KeyframeTrack: Out of order keys.
+KeyframeTrack: Value is not a valid number.
+THREE.KeyframeTrack: Unsupported typeName:
+THREE.KeyframeTrack: track type undefined, can not parse
+FileLoader: HTTP Status 0 received.
+PropertyBinding: No target node found for track:
+but it wasn't found.
+PropertyBinding: Can not bind to morphTargetInfluences because node does not have a geometry.
+PropertyBinding: Can not bind to morphTargetInfluences because node does not have a geometry.morphAttributes.
+Raycaster: Unsupported camera type:
+" attribute exists among all geometries, or in none of them.
+. Make sure all geometries have the same number of attributes.
+. .morphTargetsRelative must be consistent throughout all geometries.
+. .morphAttributes must be consistent throughout all geometries.
+. The geometry must have either an index or a position attribute
+attribute.
+morphAttribute.
+=this.min.x&&e.x
+=this.min.y&&e.y
+=this.min.z&&e.z
+=this.min.x&&e.min.x
+=this.min.y&&e.min.y
+=this.min.z&&e.min.z
+0?(t+=e.normal.z*this.min.z,n+=e.normal.z*this.max.z):(t+=e.normal.z*this.max.z,n+=e.normal.z*this.min.z),t
+0?-i:Math.min(Math.max(-i,-s),i),f=-u*u+d*(d+2*s)+c):d
+i)return null;let a=Math.sqrt(i-r),o=n-a,s=n+a;return s
+n||isNaN(n))&&(n=i),(a
+0?e.max.z:e.min.z,r.distanceToPoint(Xi)
+r)return;ia.applyMatrix4(e.matrixWorld);let c=t.ray.origin.distanceTo(ia);if(!(c
+.9&&Math.min(t,n,r)
+0&&(t=-t);for(let n=1;n
+0?c=r[(o-1)%i]:(Ia.subVectors(r[0],r[1]).add(r[0]),c=Ia);let u=r[o%i],d=r[(o+1)%i];if(this.closed||o+2
+0)for(let i=t;i
+=Math.min(e.x,n.x)&&t.y
+=0:Q(e,t,e.prev)
+a&&n.next.y!==n.y&&i
+0)&&f.push(t,i,c),(e!==n-1||s
+=t)r=t;else if(r
+e.x!==i&&Math.abs(a.x-e.x)
+=e.x-e.width/2&&t
+=e.z-e.depth/2&&n
+THREE.WebGLAttributes: Unsupported buffer data format:
+THREE.WebGLAttributes: The size of the buffer attribute's array buffer does not match the original size. Resizing buffer attributes is not supported.
+not supported, using
+WebGLRenderer: Unable to use reversed depth buffer due to missing EXT_clip_control extension. Fallback to default depth buffer.
+Sampling the GGX Distribution of Visible Normals
+WebGLRenderer:
+extension not supported.
+WebGLInfo: Unknown draw mode:
+WebGLProgram: Unsupported toneMapping:
+WebGLRenderer: Shader chunk "%s" has been deprecated. Use "%s" instead.
+#version
+#define SHADER_TYPE
+#define SHADER_NAME
+#ifdef USE_INSTANCING
+#ifdef USE_INSTANCING_COLOR
+#ifdef USE_INSTANCING_MORPH
+#ifdef USE_UV1
+#ifdef USE_UV2
+#ifdef USE_UV3
+#ifdef USE_TANGENT
+#ifdef USE_SKINNING
+#define CUBEUV_TEXEL_WIDTH
+#define CUBEUV_TEXEL_HEIGHT
+#define CUBEUV_MAX_MIP
+#define TONE_MAPPING
+#define DITHERING
+#define varying out
+#define texture2D texture
+#define gl_FragColor pc_fragColor
+#define gl_FragDepthEXT gl_FragDepth
+#define textureCube texture
+#define texture2DProj textureProj
+#define texture2DLodEXT textureLod
+#define texture2DProjLodEXT textureProjLod
+#define textureCubeLodEXT textureLod
+#define texture2DGradEXT textureGrad
+#define texture2DProjGradEXT textureProjGrad
+#define textureCubeGradEXT textureGrad
+WebGLProgram: Shader Error
+- VALIDATE_STATUS
+WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.
+has no shadow.
+WebGLShadowMap: VSM shadow maps are not supported for PointLights. Use PCF or BasicShadowMap instead.
+WebGLState: Invalid blending:
+WebGLRenderer: Attempt to use non-existing WebGL internal format '
+WebGLTextures: Trying to use
+texture units while this GPU supports only
+WebGLRenderer: Texture marked for update but no image data found.
+WebGLRenderer: Texture marked for update but image is incomplete
+WebGLRenderer: Unable to use linear filtering with floating point textures. OES_texture_float_linear not supported on this device.
+THREE.WebGLTextures: renderTarget.depthTexture must be an instance of THREE.DepthTexture.
+THREE.WebGLTextures: Unknown depthTexture format.
+WebGLTextures: Unsupported texture color space:
+WebXRManager: Cannot change framebuffer scale while presenting.
+WebXRManager: Cannot change reference space type while presenting.
+WebGLRenderer: Maximum number of simultaneously usable uniforms groups reached.
+WebGLRenderer: Texture samplers can not be part of an uniforms group.
+WebGLRenderer: Unsupported uniform value type.
+three.js r186
+THREE.WebGLRenderer: Error creating WebGL context with your selected attributes.
+THREE.WebGLRenderer: Error creating WebGL context.
+WebGLRenderer: Can't change size while VR device is presenting.
+WebGLRenderer: Context Lost.
+WebGLRenderer: Context Restored.
+WebGLRenderer: A WebGL context could not be created. Reason:
+THREE.WebGLRenderer: Attached DepthTexture is initialized to the incorrect size.
+WebGLRenderer.readRenderTargetPixels: renderTarget is not THREE.WebGLRenderTarget.
+WebGLRenderer.readRenderTargetPixels: renderTarget is not in RGBA or implementation defined format.
+WebGLRenderer.readRenderTargetPixels: renderTarget is not in UnsignedByteType or implementation defined type.
+THREE.WebGLRenderer.readRenderTargetPixels: renderTarget is not THREE.WebGLRenderTarget.
+THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in RGBA or implementation defined format.
+THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in UnsignedByteType or implementation defined type.
+THREE.WebGLRenderer.readRenderTargetPixelsAsync: requested read bounds are out of range.
+e.start-t.start);let t=0;for(let e=1;e
+0 vec4 plane; #ifdef ALPHA_TO_COVERAGE float distanceToPlane, distanceGradient; float clipOpacity = 1.0; #pragma unroll_loop_start for ( int i = 0; i
+0 PointLightShadow pointLightShadow; #endif #pragma unroll_loop_start for ( int i = 0; i
+0 SpotLightShadow spotLightShadow; #endif #pragma unroll_loop_start for ( int i = 0; i
+0 SunLightShadow sunLightShadow; #endif #pragma unroll_loop_start for ( int i = 0; i
+0 DirectionalLightShadow directionalLightShadow; #endif #pragma unroll_loop_start for ( int i = 0; i
+0 ) && defined( RE_Direct_RectArea ) RectAreaLight rectAreaLight; #pragma unroll_loop_start for ( int i = 0; i
+0 ) #pragma unroll_loop_start for ( int i = 0; i
+= 0.0 && shadowCoord.x
+= 0.0 && shadowCoord.y
+= cascade.x && viewDepth
+0 #pragma unroll_loop_start for ( int i = 0; i
+0 SunLightShadow sunLight; #pragma unroll_loop_start for ( int i = 0; i
+0 DirectionalLightShadow directionalLight; #pragma unroll_loop_start for ( int i = 0; i
+0 SpotLightShadow spotLight; #pragma unroll_loop_start for ( int i = 0; i
+0 && ( defined( SHADOWMAP_TYPE_PCF ) || defined( SHADOWMAP_TYPE_BASIC ) ) PointLightShadow pointLight; #pragma unroll_loop_start for ( int i = 0; i
+#ifdef USE_DISPLACEMENTMAP #include
+#endif #include
+#if DEPTH_PACKING == 3200 diffuseColor.a = opacity; #endif #include
+outgoingLight = diffuseColor.rgb; #include
+#if defined ( USE_ENVMAP ) || defined ( USE_SKINNING ) #include
+reflectedLight.indirectDiffuse *= diffuseColor.rgb; vec3 outgoingLight = reflectedLight.indirectDiffuse; #include
+vViewPosition = - mvPosition.xyz; #include
+ReflectedLight reflectedLight = ReflectedLight( vec3( 0.0 ), vec3( 0.0 ), vec3( 0.0 ), vec3( 0.0 ) ); vec3 totalEmissiveRadiance = emissive; #include
+vec3 outgoingLight = reflectedLight.directDiffuse + reflectedLight.indirectDiffuse + totalEmissiveRadiance; #include
+vec3 outgoingLight = reflectedLight.directDiffuse + reflectedLight.indirectDiffuse + reflectedLight.directSpecular + reflectedLight.indirectSpecular + totalEmissiveRadiance; #include
+vec3 totalDiffuse = reflectedLight.directDiffuse + reflectedLight.indirectDiffuse; vec3 totalSpecular = reflectedLight.directSpecular + reflectedLight.indirectSpecular; #include
+gl_PointSize = size; #ifdef USE_SIZEATTENUATION bool isPerspective = isPerspectiveMatrix( projectionMatrix ); if ( isPerspective ) gl_PointSize *= ( scale / - mvPosition.z ); #endif #include
+vec3 outgoingLight = vec3( 0.0 ); #include
+gl_FragColor = vec4( color, opacity * ( 1.0 - getShadowMask() ) ); #include
+2?0:-1,r=[t,n,0,t+2/3,n,0,t+2/3,n+1,0,t,n,0,t+2/3,n+1,0,t,n+1,0];c.set(r,18*e);for(let t=0;t
+16u); bits = ((bits & 0x55555555u)
+1u); bits = ((bits & 0x33333333u)
+2u); bits = ((bits & 0x0F0F0F0Fu)
+4u); bits = ((bits & 0x00FF00FFu)
+t.maxTextureSize&&(h=Math.ceil(m/t.maxTextureSize),m=t.maxTextureSize);let g=new Float32Array(m*h*4*d),_=new r(g,m,h,d);_.type=De,_.needsUpdate=!0;let y=p*4;for(let t=0;t
+n)&&(r=n/Math.max(i.width,i.height)),r
+e.start-t.start);let s=0;for(let e=1;e
+=e.TEXTURE_CUBE_MAP_POSITIVE_X&&l
+0)for(let r=0;r
+0)for(let n=0;n
+1;if(d)for(let t=0;t
+0?n.bindFramebuffer(e.DRAW_FRAMEBUFFER,u.__webglFramebuffer[0]):n.bindFramebuffer(e.DRAW_FRAMEBUFFER,u.__webglFramebuffer);for(let n=0;n
+0)for(let t=0,a=i.length;t
+THREE.GLTFLoader: Unknown extension "
+THREE.GLTFLoader: Unexpected light type:
+THREE.GLTFLoader: setKTX2Loader must be called before loading KTX2 textures
+THREE.GLTFLoader: setMeshoptDecoder must be called before loading compressed files
+THREE.GLTFLoader: Unsupported glTF-Binary header.
+THREE.GLTFLoader: Legacy binary file detected.
+THREE.GLTFLoader: JSON content not found.
+THREE.GLTFLoader: No DRACOLoader instance provided.
+THREE.GLTFLoader: Ignoring primitive type .extras,
+THREE.GLTFLoader: Invalid extras.targetNames length. Ignoring names.
+THREE.GLTFLoader: Unsupported itemSize in sparse BufferAttribute.
+is missing URI and bufferView
+THREE.GLTFLoader: Couldn't load texture
+THREE.GLTFLoader: Missing skinIndex or skinWeight attributes. Skinning disabled.
+THREE.GLTFLoader: Primitive mode unsupported:
+THREE.GLTFLoader: Missing camera parameters.
+THREE.GLTFLoader: Joint "%s" could not be found.
+THREE.GLTFLoader: Missing min/max properties for accessor POSITION.
+Runner sidearm
+Open sidearm holster
+Cerakote steel
+Molded frame
+Machined barrel
+Brass cartridge
+Grip panels
+Holster shell
+Olive carbine furniture
+Rounded open trigger guard
+Hinged trigger
+Curved trigger shoe
+Trigger safety
+Front slide cover
+Rear slide cover
+Ejection port left bridge
+Ejection port right sill
+Ejection port roof
+Visible chamber hood
+Dark chamber interior
+Rear slide serration
+Front slide serration
+Front sight
+Front sight dot
+Rear sight notch
+Rear sight dot
+Fixed open barrel
+Crowned barrel mouth
+Recessed bore
+Recoil guide rod
+Guide rod cap
+Removable box magazine
+Steel magazine body
+Magazine baseplate
+Magazine witness hole
+Compact automatic carbine
+Carbine receiver and barrel
+Upper receiver
+Lower receiver
+Ventilated fore-end
+Recessed cooling slot
+Exposed barrel
+Open flash hider
+Carbine muzzle crown
+Carbine recessed bore
+Rubber pistol grip
+Trigger guard base
+Trigger guard front
+Carbine trigger
+Receiver pin
+Runner automatic carbine
+Invalid weapon scale
+Invalid authored motion settings
+Generated character
+Generated asset did not contain a scene
+Oriented generated model
+Generated asset has invalid model bounds
+Urban runner
+Snow · Blender Studio
+Rick Sanchez
+Recessed almond eye
+Finn fitted cloth hood
+Batched character details
+Articulated ankle
+(o[e]=t,o[e])));return a.length
+1?new F:t.length===1?t[0]:new ae,o!==t[0])for(let e=0,n=t.length;e
+e(t,new Ze(o,s,c,u
+e.isMesh&&e.material===t);if(n.length
+0?Zt(1-i/o,0,1):0;this.reloadPhase=s,this.reloadStage=i
+.86,this.slideLocked=Number.isFinite(n?.ammo)&&n.ammo
+a?`run`:i===`run`&&e
+0&&t.sampleDelta
+0?`reload`:this.fireAge
+0)&&!!n.combatState,o=a&&this.upperActions[n.combatState]?n.combatState:null,s=n.jumpProgress
+dn(_+t*Math.PI,Math.min(x,e.length*(o.travelSample?.measured?.64:.39)),S,o.sprint,o.travelSample?.contact)),w=b+y*(1-g)-h;for(let t=0;t
+0),17,a);let O=G(1-D/(o.reloadDuration||2e3)),k=Math.sin(Math.PI*O);for(let t=0;t
+0?`reload`:j?`fire`:o.landingAge
+this.asset.height*.18)continue;let c=n.geometry.attributes.skinWeight,l=n.geometry.attributes.skinIndex,u=0;for(let e=1;e
+new h(e[1],e[0],e[2])),l=new N(c).getPoints(Math.max(36,r.length*6)),u=[],d=[],f=[],p=i+1;for(let e=0;e
+new h(...e))),s=[],c=[],l=[],u=new h,d=new h,f=new h,p=new h(0,0,1);for(let e=0;e
+0)].mesh,c=s.geometry.attributes.position,l=[],u=new _(n),d=new _(t);for(let e=0;e
+new h(e[1],e[0],e[2])),!1,`centripetal`).getPoints(a),d=[],f=[],p=[];for(let e=0;e
+varying vec3 vCreatureFurPosition;`).replace(`#include
+vCreatureFurPosition = position;`),e.fragmentShader=e.fragmentShader.replace(`#include
+varying vec3 vCreatureFurPosition; uniform vec3 creatureFurBase; uniform vec3 creatureFurPatch; uniform vec3 creatureFurShape;`).replace(`#include
+new h(...e)),!1,`centripetal`),c=s.computeFrenetFrames(o,!1),l=[],d=[],f=[];for(let e=0;e
+varying vec2 creatureIrisUv;`).replace(`#include
+creatureIrisUv = uv;`),e.fragmentShader=e.fragmentShader.replace(`#include
+e.limb(e.body,n*.204,.49,0,.43,.041,t,`#302924`,!0));for(let t=0;t
+e.limb(e.body,n*.151,.53,.01,.488,.052,t,t,!0));for(let n=0;n
+new f(Math.max(0,e.x),e.y)),v=new qe(g,18),y=v.attributes.position,b=[],x=[];for(let e=0;e
+Alex · Urban explorer
+Lounge dealer
+The dealer model could not be loaded
+Skinned human dealer
+The dealer model needs a complete human skeleton
+Invalid dealer model bounds
+700 77px Georgia, serif
+66px Georgia, serif
+700 175px Georgia, serif
+100px Georgia, serif
+500 62px Georgia, serif
+THE COURTYARD
+500 22px Georgia, serif
+BLACKJACK PAYS 3 TO 2
+18px system-ui
+DEALER STANDS ON 17
+The courtyard table is still preparing.
+The courtyard table is already open.
+First-person view seated at the same courtyard blackjack table
+The table graphics connection was interrupted.
+=0?1:-1,f=new i(d*.22,I(t.y-.17,.9-a.position.y,.99-a.position.y),-.4).clone().sub(t),p=f.length();if(p
+=0&&e.seat
+=0&&e.selfSeat
+=e.handDuration*.18,this.time-e.start
+this.cards.has(e.key)&&this.time
+18)throw Error(`Invalid token amount`);let i=String(n).match(/^(\d+)(?:\.(\d+))?(?:e([+-]?\d+))?$/i);if(!i||!Number.isFinite(Number(n))||Number(n)
+THREE.HDRLoader: Read Error:
+THREE.HDRLoader: Unsupported type:
+Maze size must be an odd integer of at least 9.
+The Courtyard
+The Fern Garden
+Sunlit Terrace
+The Quiet Grove
+The Old Sanctuary
+Block Nine
+THE ABANDONED RESIDENCE
+Three floors. Two stairwells. One open atrium. Take the high route or slip beneath the fight.
+VERTICAL / INTERIORS
+THE ROOFTOP CONSERVATORY
+Overgrown glass pavilions connected by raised bridges. Trade long sightlines for sheltered garden routes.
+BRIDGES / FLANKS
+THE COASTAL STRONGHOLD
+Storm-worn bastions, a sunken courtyard and twin ramparts. Control the walls or move through cover below.
+RAMPARTS / COURTYARD
+(i=s.indexOf(` `))&&a
+32767||e[0]!==2||e[1]!==2||e[2]&128)return new Uint8Array(e);i!==(e[2]
+e.byteLength&&t(1),l[0]=e[s++],l[1]=e[s++],l[2]=e[s++],l[3]=e[s++],(l[0]!=2||l[1]!=2||(l[2]
+(n==null||t.id!==n)&&t.profile!==null&&!t.isGhost&&Number.isFinite(t.x)&&Number.isFinite(t.z)&&Math.hypot(e.x-t.x,e.z-t.z)
+=l&&e.x-e.width/2
+=d&&e.z-e.depth/2
+Math.abs(t-e.x)
+c.maxX-i||r
+r&&c&&(this.x*=r/c,this.z*=r/c);let l=this.x*o+this.z*s
+0||t.ammo
+THREE.SSAOPass: Unknown output type.
+=3?4:24;if(this.elapsed
+23?this.slow+1:0,this.fast=r
+=2&&this.level
+m?(h=1,g=0):(h=0,g=1);let _=p-h+l,v=m-g+l,y=p-1+2*l,b=m-1+2*l,x=s&255,S=c&255,C=this.perm[x+this.perm[S]]%12,w=this.perm[x+h+this.perm[S+g]]%12,T=this.perm[x+1+this.perm[S+1]]%12,E=.5-p*p-m*m;E
+minDistance && delta
+A stock coin requires a valid stock and tier.
+OBSTRUCTED
+Summer garden
+Autumn glow
+.season-options button
++
+−
+BLUE FLAG
+RED FLAG
+500 16px system-ui
+3 FLOORS · CONNECTED STAIRWELLS
+RAISED BRIDGES · LOWER GARDEN
+TWIN RAMPARTS · CENTRAL COURTYARD
+#include <begin_vertex>
+FIELD EQUIPMENT
+RESIDENTIAL · NO ENTRY
+600 55px system-ui
+500 21px system-ui
+FORT MERIDIAN
+COASTAL DEFENCE · 1948
+700 86px system-ui
+0))return null;let u=typeof o==`string`?this.materials[o]||this.materials.wall:o,d=this.unitBox.clone();d.scale(r,i,a);let f=d.attributes.position,p=d.attributes.normal,m=d.attributes.uv;for(let r=0;r
+e.d,n=t?e.w:e.d,r=Math.max(1,Math.round(n/2));for(let i=0;i
+The arena needs a game canvas.
+This arena map is unavailable.
+Live Capture the Flag spectator view. Use the camera controls to follow a runner or see the arena.
+<span style="color:#8ecbe9">● Blue</span><span style="color:#f1a29b">● Red</span><span>⚑ Flags</span>
+Capture the Flag arena. WASD move. Right mouse or Q aim, left mouse or Space fire, F jump, R reload.
+Your position, teammates
+4||n.pose.health
+2&&t[1].time
+3e3&&this.predicted.delete(e);(e.health
+0||e-this.lastFire
+● Blue
+● Red
+⚑ Flags
+You
+Team
+Stairs
+0?`damage`:`knockout`)),(r?.reloadRemainingMs||0)
+0&&this.feedback.reloading(i)
+The tutorial needs a canvas.
+TRAINING RANGE
+Private practice courtyard. Arrow keys or WASD move. Hold Shift while moving to sprint. F jumps. Right mouse or Q aims. Left mouse or Space fires. R reloads. Hold E beside the practice drop.
+!this.collected.has(e.id)&&c(e)
+=u?1:this.elapsed/u,this.progress
+=-.001)return null;let n=(-5.14-e.z)/t.z;if(n
+25)return null;let r=e.clone().addScaledVector(t,n);return Math.hypot(r.x,r.y-1.4)
+0||this.ammo
+forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported
+Minified React error #
+for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+:typeof e,
+[object Object]
+change click focusin focusout input keydown keyup selectionchange
+focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange
+compositionend focusout keydown keypress keyup mousedown
+compositionstart focusout keydown keypress keyup mousedown
+compositionupdate focusout keydown keypress keyup mousedown
+View transition was skipped because document visibility state is hidden.
+Skipping view transition because document visibility state has become hidden.
+Skipping view transition because viewport size changed.
+Transition was aborted because of invalid state
+not all
+mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset
+User must be authenticated before exporting their Privy wallet
+User must have an embedded wallet.
+Wallet not ready for export
+Must have valid access token.
+attempted to use private field on non-instance
+Invalid result from signTransaction or signAndSendTransaction attempt
+Initializing WalletConnect Solana provider
+Creating new Solana WalletConnect session
+WalletConnectSolana: Failed to create new session
+Solana WalletConnect session created
+Restored Solana WalletConnect session
+No existing Solana WalletConnect session found
+Destroying Solana WalletConnect session
+Error disconnecting Solana WalletConnect session
+User disconnected
+Solana WalletConnect session destroyed
+Error destroying Solana WalletConnect session
+Solana WalletConnect RPC request
+Solana WalletConnect RPC response
+Solana WalletConnect RPC error
+without any listeners
+Ignoring WalletConnect listener warning, result available
+session topic does not exist in keychain
+WalletConnectSolana: Wallet connection lost. Please reconnect.
+Solana WalletConnect display_uri received
+Displaying Solana WalletConnect QR code
+Solana WalletConnect session deleted
+Payment needs review
+Payment window ended
+Partial payment received
+Waiting for your payment
+Send to checkout address
+Token mint
+Your payment is confirmed. Your purchase is in your locker.
+Your payment is recorded, but cannot complete this quote automatically. Keep this order ID for support.
+Do not send to this expired quote. Any late funds remain recorded against this order for review.
+Check payment now
+has-selection
+Pay with xStocks
+Reading your wallet…
+No xStocks found in this wallet.
+Pay with another currency
+Shop failed to render.
+Your locker
+Payment received. Your purchase is in your locker.
+ONE THROW
+Connect a Solana wallet first.
+Pay from
+Maze wallet
+Solana wallet
+Loading your wallets…
+Use another wallet
+Connect wallet
+Creating Maze wallet…
+Create Maze wallet
+Something went wrong. Please try again.
+Confirm in your wallet…
+Sending payment…
+Sign back into the same account to check this payment.
+Checking payment…
+Preparing payment…
+Item unequipped.
+Updating your locker…
+has-checkout
+Field supply
+Close shop
+Pay with SOL or stock tokens
+Opening the supply room…
+Sign in with X
+Your locker is ready for its first item.
+New supplies are on the way.
+is-selected
+CARD TABLE CHIPS
+ONE USE
+OUTFIT COLOR
+AUTOMATIC WEAPON
+GUN UPGRADE
+Return to the maze and press G to throw a grenade. One charge is used per throw.
+Throw with G
+Activate now
+Buy another
+Get item
+Activate boosts from your locker when you are ready. Shield and stealth end when you shoot or start claiming a drop. Timers continue while you are away.
+Purchase complete · View receipt
+Address checkout · View payment
+Payment submitted · Check confirmation
+Previous quote · Check before retrying
+Quote prepared · No payment recorded
+View receipt
+Check payment
+Payment receipt
+Complete payment
+Close purchase review
+One grenade charge
+Permanent unlock
+Payment method
+External wallet
+Address checkout unavailable
+Get payment address
+Review purchase
+You pay
+Free in demo
+Maze pays the Solana network fee.
+and any token account creation fee
+Payment submitted · Safe to check again
+Quote expired
+Refresh quote
+Add demo item
+Confirm & pay
+Your item is added only after payment is verified.
+The network returned an incomplete confirmation. Please check again.
+Your Maze wallet is still connecting. Reopen Wallet in a moment.
+This preview expired. Review the withdrawal again.
+Check the previous withdrawal before starting another.
+The wallet returned a different transaction. Nothing was submitted.
+Your browser could not save a withdrawal receipt. Enable site storage before withdrawing. Nothing was submitted.
+Withdrawals need a browser with secure tab locking. Update your browser and try again.
+A withdrawal is already open in another tab. Check it before trying again.
+Copy address
+Submitting withdrawal…
+Checking confirmation…
+YOUR CORNER OF THE MAZE
+Withdraw funds
+Export your wallet
+Close wallet
+← Back to wallet
+SOLANA MAINNET
+Secured by Privy
+View on Solscan ↗
+Your Maze wallet is reconnecting. You can still view its address and holdings.
+Reading your on-chain balances…
+Balances could not be loaded. Try Refresh.
+No xStocks here yet. Supported stock tokens appear when they reach this wallet.
+On-chain SOL and supported xStocks. Preview drops are not wallet funds.
+REWARD DESTINATION
+Your external wallet
+This Maze wallet
+Not chosen yet
+Change ↗
+Reward address
+Choose where future drops should go.
+Export private key ↗
+Maze wallet ·
+Opening secure export…
+Secure export closed.
+Continue to secure export
+Send funds from your Maze wallet to another Solana wallet.
+Destination address
+Paste a Solana wallet address
+Your saved reward address. You can change it for this withdrawal.
+Use token balance
+Review withdrawal
+YOU WILL SEND
+Check the full destination address. A confirmed transfer cannot be reversed. Confirm withdrawal sends this exact transaction.
+Confirm withdrawal
+Withdrawal pending
+Withdrawal confirmed
+Withdrawal failed
+Withdrawal expired
+Check status
+Creating wallet…
+Continue with X
+Could not save your profile. Please try again.
+Your profile could not be loaded. Please try again.
+Preparing preview…
+Change character
+Sign in with X to open your wallet.
+Practice could not start. Please try again.
+YOUR FIRST RUN
+PRACTICE COMPLETE
+How will you enter?
+Choose your character.
+Close player setup
+Pick a runner, then learn the controls in a private practice garden. No account needed until you’re ready.
+Your practice is complete. Explore the garden as a ghost, or connect X when sign-in is available.
+Captured in game
+Preparing practice…
+Practice first. Choose X sign-in or ghost mode afterwards.
+Sign-in is unavailable in this preview. Ghost mode is ready.
+X sign-in was cancelled or could not finish. Please try again.
+Connecting to X…
+Could not open X sign-in. Please try again.
+Enter a valid Solana wallet address. It is usually 32–44 characters long.
+Saving your profile…
+Your session has expired. Sign in with X again.
+Your profile
+Enter Game
+MAKE YOUR ENTRANCE
+Where should your rewards go?
+Choose a Solana wallet for the stock drops you collect.
+Your practice is complete. Join the runners with X, or explore the garden as a ghost.
+Your X profile is your identity in the maze. Pick a character and step inside.
+Pick your runner. You can sign in with X or explore as a ghost.
+X CONNECTED
+Reward destination
+No real tokens are sent yet.
+Receive rewards in
+selected
+A wallet made for you. Secured by Privy.
+My own Solana wallet
+Send rewards to an address you already use.
+Solana wallet address
+Use an address you control. Check it carefully before saving.
+Maze Runner covers the network fees.
+This change applies to future drops. Rewards you already claimed keep their original destination.
+Save & enter the maze
+Continue to rewards
+Preparing X sign-in…
+Your wallet address is never shown above your character.
+Your photo and linked X @handle are visible to other players.
+Sign out
+i(u,c)?(e[r]=u,e[l]=n,r=l):(e[r]=c,e[s]=n,r=s);else if(l
+`)&&(u=u.replace(`
+s)break;var u=c.transferSize,d=c.initiatorType;u&&ap(d)&&(c=c.responseEnd,o+=u*(c
+e.category===c);if(!i)return null;let De=g&&Number(g.order.expiresAt)
+=0?s*=10n**BigInt(o):c=10n**BigInt(-o),s
+`Approval` event not found.
+`to` is required. Could not infer from `authorizationList`.
+Action instead."],docsPath:
+`Transfer` event not found.
+The `signAuthorization` Action does not support JSON-RPC Accounts.
+Wallet Client
+Transaction must:
+- include `type: "eip712"`
+- include one of the following: `customSignature`, `paymaster`, `paymasterInput`, `gasPerPubdata`, `factoryDeps`
+`paymasterInput` must be provided when `paymaster` is defined
+`paymaster` must be provided when `paymasterInput` is defined
+Abstract Explorer
+Abstract Testnet
+Avalanche Fuji
+Base Sepolia
+Sepolia Ether
+EDU Chain
+IoTeX Testnet
+Polygon Amoy
+Sei Network
+Sei Testnet
+Data Network
+The current component <${r} /> is rendering a "Fragment".
+However we need to passthrough the following props:
+You can apply a few solutions:
+Render a single element as the child so that we can forward the props onto that element.
+Missing Focus.First, Focus.Previous, Focus.Next or Focus.Last
+for your tests.","Please install a proper polyfill e.g.
+, to silence these warnings.",
+Example usage:
+There are no focusable elements inside the <FocusTrap />
+A <Transition.Child /> is used but it is missing a parent <Transition /> or <Transition.Root />.
+Did you forget to passthrough the `ref` to the actual DOM node?
+dialog\` and and \`alertdialog\` are supported. Using \`dialog\` instead.
+and an
+prop to the
+, but forgot an
+Segoe UI
+Apple Color Emoji
+Segoe UI Emoji
+Liberation Mono
+enum IContractDeployer.AccountNonceOrdering
+SKALE Base Sepolia
+Invalid network
+No response from authentication
+Auth flow has no API instance
+Auth flow must be initialized first
+WebAuthn is not supported in this browser
+Passkey request timed out or rejected by user.
+SiwsFlow has no client instance
+Could not prepare SIWS message
+Wallet does not support the necessary signing methods
+,provider:void 0,appId:void 0,token:void 0,error:void 0,status:
+Captcha failed
+code 429
+MFA canceled
+MFA verification failed, retry.
+Timed out waiting for MFA code
+Max MFA verification attempts reached
+iframe not initialized
+Unsupported wallet proxy method:
+Timed out
+MFA operation timed out
+Privy iframe failed to load:
+Recovery method not supported
+[Privy] Farcaster Solana wallet registered
+Unable to migrate wallets:
+User must be authenticated before creating a Privy wallet
+`useSyncJwtBasedAuthState` must be used within a `PrivyProvider`
+Invalid Tempo transaction
+Unable to sign transaction
+Invalid params for personal_sign
+Invalid params for eth_signTypedData_v4
+Invalid params for eth_estimateGas
+Privy Wallet
+Cannot link or login with embedded wallet
+Cannot unlink with embedded wallet
+User must be authenticated before linking an account.
+Cannot sponsor transactions for externally connected wallet.
+Unable to
+No embedded or connected wallet found for address.
+User must be authenticated before signing with a Privy wallet
+Must have a Privy wallet before signing
+Must have valid access token and Privy wallet to send transaction
+Unable to connect to wallet
+Sponsoring is only supported for wallets on the TEE stack
+Cannot sponsor a sign transaction request
+Must have valid access token to enroll in MFA
+User must be authenticated before adding recovery method to Privy wallet
+Must have a Privy wallet to add a recovery method
+User owned wallet recovery is only supported for on-device execution and this app uses TEE execution. Learn more https://docs.privy.io/recipes/tee-wallet-migration-guide
+Attempted to log in, but user is already logged in. Use a `link` helper instead.
+Unable to sign message
+Message must be a non-empty string
+Unable to sign typed data
+Funding failed
+Unable to load solana rpc, skipping balance
+Unable to pull wallet balance
+Unable to load solana plugin, skipping balance
+User must be authenticated and have an embedded wallet to delegate actions.
+Only Solana and Ethereum embedded wallets are supported for delegation and revocation.
+Wallet proxy not initialized.
+Address to delegate is not associated with current user.
+useDelegatedActions is only supported for on-device execution and this app uses TEE execution. Use the useSessionSigners hook to provision server side access on behalf of your users. Learn more at https://docs.privy.io/recipes/tee-wallet-migration-guide
+User must be authenticated and have an embedded wallet to revoke a delegated wallet.
+User has no delegated wallets to revoke.
+Must initialize Farcaster flow first.
+Unable to open cross-app auth popup
+No authorization URL returned for cross-app auth.
+Authorization request timed out after 2 minutes.
+User rejected request
+OAuth in chrome extension flow failed:
+Telegram auth failed or was canceled by the client
+Telegram was not initialized
+Telegram Auth configuration is not loaded
+Must initialize Telegram flow before calling loginWithTelegram
+Must initialize Passkey flow first.
+Must init login with Passkey flow first.
+User already authenticated
+Must have valid access token and Privy wallet to recover wallet
+Embedded wallet is only available over HTTPS
+Cannot initialize the Privy provider with an invalid Privy app ID
+0&&(r[n]=0);let i=e+r[n];return i
+0)throw Error([`Passing props on "Fragment"!`,``,`The current component
+typeof window
+is used but it is missing a parent
+is missing a parent
+t.length
+payable
+Failed to parse ABI item.
+address owner
+address to
+bool approved
+bytes _data
+bytes data
+bytes signature
+bytes32 hash
+bytes32 r
+bytes32 root
+bytes32 s
+string name
+string symbol
+string tokenURI
+uint tokenId
+uint8 v
+uint256 balance
+uint256 tokenId
+uint256 value
+event:address indexed from
+Make sure you are using the correct ABI and that the constructor exists on it.
+Cannot encode error result without knowing what the parameter types are.
+Make sure you are using the correct ABI and that the inputs exist on it.
+Make sure you are using the correct ABI and that the error exists on it.
+Make sure you are using the correct ABI and that the event exists on it.
+Make sure you are using the correct ABI and that the function exists on it.
+outputs\` on ABI.
+Cannot decode function result without knowing what the parameter types are.
+These types encode differently and cannot be distinguished at runtime.
+Remove one of the ambiguous items in the ABI.
+Please provide a valid ABI type.
+is not a valid definition type.`,`Valid types:
+true\` or \`false\`.
+condition failed.",17:
+,33:`Attempted to convert to an invalid type.`,34:`Attempted to access a storage byte array that is incorrectly encoded.`,49:
+Array index is out of bounds.
+Allocated too much memory or created an array which is too large.
+Attempted to call a zero-initialized variable of internal function type.
+Cannot infer a transaction type from provided transaction.
+Provided Transaction:
+To infer the type, either provide:
+- a `type` to the Transaction, or
+- an EIP-1559 Transaction with `maxFeePerGas`, or
+- an EIP-2930 Transaction with `gasPrice` & `accessList`, or
+- an EIP-4844 Transaction with `blobs`, `blobVersionedHashes`, `sidecars`, or
+- an EIP-7702 Transaction with `authorizationList`, or
+- a Legacy Transaction with `gasPrice`
+Request Arguments:
+at index
+. This could mean that the function on the contract you are trying to call threw an error.`,` `,`You can attempt to extract the revert reason by:`,
+- using the `call` Action with raw `data`
+This operation was aborted
+Raw Call Arguments:
+- The `factoryData` is a valid encoded function call for contract deployment function on the factory.
+HTTP response body exceeded the size limit.
+RPC Request failed.
+The request took too long to respond.
+The request timed out.
+execution reverted:
+for an unknown reason
+Try increasing the nonce or find the latest nonce with `getTransactionCount`.
+- pay for the total gas fee,
+- pay for the value to send.
+,"The cost of the transaction is calculated as
+, where:"," -
+is the amount of gas needed for transaction to execute,"," -
+is the gas fee,"," -
+is the amount of ether to send to the recipient."],name:
+The transaction type is not supported for this chain.
+`requireCanonical` can only be provided when `blockHash` is set.
+The bytes array must contain a single byte of either a `0` or `1` value.
+:void 0,min:
+signed
+unsigned
+No chain was provided to the request.
+Please provide a chain with the `chain` argument on the Action, or by supplying a `chain` to WalletClient.
+Chain ID is invalid.
+Cannot provide both `code` & `factory`/`factoryData` as parameters.
+Cannot provide both `code` & `to` as parameters.
+Offchain Gateway Call:
+Offchain gateway response is malformed. Response data must be a hex value.
+An unknown error occurred.
+[a-zA-Z$_][a-zA-Z0-9$_]*(?:\spayable)?)(?
+0)throw new ht;if(r(t)&&r(t)
+=Y.zero&&e
+:void 0,version:
+is not a valid boolean. The hex value must be
+only keccak-f1600 function is supported
+XOF is not possible for this instance
+=P.zero&&e
+positive integer expected, got
+Uint8Array expected
+Uint8Array expected of length
+Hash should be wrapped by utils.createHasher
+Hash instance has been destroyed
+" at index
+string expected
+crypto.getRandomValues must be defined
+boolean expected, got
+expected, got
+expected valid
+, got
+hashLen must be a number
+qByteLen must be a number
+hmacFn must be a function
+drbg: tried 1000 values
+invalid validator function
+param
+is invalid. Expected
+typeof t==`bigint`&&e
+=1e3)throw Error(`drbg: tried 1000 values`);let e=0,n=[];for(;e
+Invalid JSON was received by the server. An error occurred on the server while parsing the JSON text.
+Invalid parameters were provided to the RPC method.
+Double check you have provided the correct parameters.
+An unknown RPC error occurred.
+Invalid yParityOrV value
+Length is too large.
+Estimate Gas Arguments:
+Chain does not support EIP-1559 fees.
+Blob data must not be empty.
+Expected: 32
+Expected: 1
+is required. Could not infer from
+,"Please provide an Account with the
+argument on the Action, or by supplying an
+client chain not configured. universalResolverAddress is required.
+is not supported. Must be
+method not supported
+timed out
+Check that the primary type is a key in `types`.
+Struct type must not be a Solidity type.
+Public key must contain:
+ABI encoding parameters/values length mismatch.
+Expected: 64 bytes or 65 bytes.
+client chain not configured. multicallAddress is required.
+`:t?` with data
+is required when
+Token decimals are required. Pass `amount.decimals` or select a declared token.
+Public Client
+No URL was provided to the Transport. Please provide a valid RPC URL to the Transport.
+L(e)):e.commitments,a=[];for(let e=0;e
+`indexed`in e&&e.indexed),h=[];for(let e=0;e
+0&&Date.now()-i.created.getTime()
+https?:\/\/[^/]*|ipfs:\/|ipns:\/|ar:\/)?(?
+ipfs\/|ipns\/)?(?
+0)throw new Bo;if(gt(a)&&gt(a)
+1&&n)for(let e=c+1n;e
+void 0),p&&r
+1&&(!p.blockNumber||l-p.blockNumber+1n
+1&&n)for(let t=d?.number+1n;t
+.*)\n\n)?/,Vc=/(?:URI: (?
+.+))\n(?:Version: (?
+.+))\n(?:Chain ID: (?
+\d+))\n(?:Nonce: (?
+[a-zA-Z0-9]+))\n(?:Issued At: (?
+.+))(?:\nExpiration Time: (?
+.+))?(?:\nNot Before: (?
+.+))?(?:\nRequest ID: (?
+=r.expirationTime)||r.notBefore&&(Number.isNaN(r.notBefore.getTime())||o
+_sha2: outputLen should be aligned to 32bit
+_sha2: outputLen bigger than state
+Expected instance of class which extends utils.Hash
+r-a&&(this.process(n,0),a=0);for(let e=a;e
+l.length)throw Error(`_sha2: outputLen bigger than state`);for(let e=0;e
+r?e.create().update(n).digest():n);for(let e=0;e
+invert: expected non-zero number
+invert: expected positive modulus, got
+invert: does not exist
+Cannot find square root
+sqrt is not defined for small field
+Cannot find square root: probably non-prime P
+invalid Legendre symbol result
+invalid field element: expected bigint, got
+Field.fromBytes: expected
+bytes, got
+field order must be bigint
+expected
+-1024 bytes of input, got
+invalid window size, expected [1..
+array expected
+invalid point at index
+array of scalars expected
+invalid scalar at index
+arrays of points and scalars must have equal length
+: bigint and
+bad curve params: generator point
+bad curve params: a or b
+invalid private key
+private key
+ProjectivePoint expected
+invZ was invalid
+bad point: ZERO
+bad point: x or y not FE
+bad point: not in prime-order subgroup
+x required
+y required
+z required
+invalid affine point
+projective point not allowed
+Field doesn't support isOdd
+Point is not on curve
+, or uncompressed
+prehashed msgHash
+options.strict was renamed to lowS
+2048)throw Error(`invalid field: expected ORDER of
+r&&(s-=a,c+=H);let l=t*r,u=l+Math.abs(s)-1,d=s===0,f=s
+0;e--)n=n.add(u[e]),t=t.add(n);if(p=p.add(t),e!==0)for(let e=0;e
+256)throw new n(`tlv.encode: wrong tag`);if(t.length
+`maxFeePerGas`/`maxPriorityFeePerGas` is not a valid EIP-2930 Transaction attribute.
+`maxFeePerGas`/`maxPriorityFeePerGas` is not a valid Legacy Transaction attribute.
+salt must be 32 bytes
+owners cannot be empty
+too many owners
+threshold must be an integer
+threshold cannot be zero
+threshold exceeds max threshold
+owner cannot be zero
+owner weight must be an integer
+owner weight cannot be zero
+owners must be strictly ascending
+total owner weight exceeds u8 max
+threshold exceeds total owner weight
+in e.signature&&
+in e.signature||
+has an invalid prefix. Expected
+:void 0,placeholder:
+but got
+Nested multisig owners must be initialized.
+Multisig owner account cannot sign.
+Local multisig owners do not meet the threshold.
+Initial multisig config is required for bootstrap.
+Multisig state is required to sign a key authorization.
+`MultisigConfigUpdated` event not found.
+account is required.
+chainId is required.
+`KeyAuthorized` event not found.
+`KeyAuthorizationWitnessBurned` event not found.
+`KeyRevoked` event not found.
+`SpendingLimitUpdated` event not found.
+Cannot prepare an uninitialized multisig account from an address. Provide its initial config instead.
+Tempo Mainnet
+w(e.owner)
+e.key
+does not exist / is not available
+did not match any variant of untagged enum
+account upgraded to unsupported contract
+eip-7702 not supported
+unsupported wc_ method
+feature toggled misconfigured
+jsonrpcengine: response has no error or result for request
+non-optional `capabilities` are not supported on fallback to `eth_sendTransaction`.
+`forceAtomic` is not supported on fallback to `eth_sendTransaction`.
+function expected
+invalid base64
+takes an object of state variables to update or a function which returns an object of state variables.
+React.Children.only expected to receive a single React element child.
+The argument must be a React element, but you passed
+Arbitrum Sepolia
+Arbitrum Sepolia Ether
+Berachain Artio
+Celo Mainnet
+Celo Alfajores Testnet
+Filecoin - Mainnet
+Filecoin - Calibration testnet
+testnet filecoin
+Garnet Holesky
+Gunz Mainnet
+Immutable zkEVM
+Immutable Coin
+Linea Mainnet
+Linea Ether
+Linea Goerli Testnet
+Metis Andromeda
+Metis Explorer
+OP Mainnet
+Optimism Explorer
+Optimism Sepolia
+Polygon Mainnet
+Soneium Mainnet
+Zora Goerli Testnet
+Zora Goerli
+Zora Sepolia
+HyperEVM Mainnet
+@babel/helpers - typeof
+Argument to polyad must be a positive number
+Log in or sign up
+when
+logins are also enabled.
+, or social logins are also enabled.
+wallet_connect_qr and wallet_connect_qr_solana cannot both be present in walletList due to WalletConnect session conflicts.
+You should not specify greater than 4 login methods in `loginMethodsAndOrder.primary`
+must be included in
+App configuration has Solana wallet login enabled, but no Solana wallet connectors have been passed to Privy. Make sure to pass Solana connectors to the `config.externalWallets.solana.connectors` field of the `PrivyProvider`
+!e||t.walletIndex
+Jt(a??Yt,r,!!a,typeof window
+more than
+greater than
+Invalid input
+less than
+smaller than
+Intersection results could not be merged
+Number must be finite
+Validation failed but no issues detected.
+Can't use "invalid_type_error" or "required_error" in conjunction with custom error map.
+Synchronous parse encountered promise.
+Anexo
+int.
+Cannot call a class as a function
+ext.
+Invalid phone number object passed
+Missing "possibleLengths" in metadata. Perhaps the metadata has been generated before v1.0.18.
+[native code]
+A text for parsing must be a string.
+operator must be preceded by
+operator in an
+operator can only be used inside
+not found in an
+JWT is expired
+Tempo fee payer signatures require a valid yParity value
+Cannot upgrade to the existing cloud platform
+Unknown recovery method
+Missing privy token. User must be logged in
+Unable to make wallet request
+Missing access token
+Operation reached timeout: MFA verification
+Embedded wallet WebView was reloaded
+Ping reached timeout
+Operation reached timeout: create
+Operation reached timeout: rpc
+Operation reached timeout: solana-rpc
+Operation reached timeout: delegated-actions:consent
+Operation reached timeout: mfa:verify
+Operation reached timeout: mfa:init-enrollment
+Operation reached timeout: mfa:submit-enrollment
+Operation reached timeout: mfa:unenroll
+Operation reached timeout: auth:unlink-passkey
+Operation reached timeout: mfa:clear
+Operation reached timeout: user-signer:sign
+Operation reached timeout: wallets:add
+Operation reached timeout: wallets:import
+Operation reached timeout: wallets:set-recovery
+Operation reached timeout: wallets:connect
+Operation reached timeout: wallets:recover
+Operation reached timeout: wallets:rpc
+Embedded wallet WebView failed to become ready
+Embedded wallet proxy not initialized
+User must be logged in to sign a message with the user signer
+Missing entropy details for wallet creation
+User must be logged in to create an embedded wallet
+Specifying additionalSigners is only supported for TEE execution and this app uses on-device execution. Learn more https://docs.privy.io/recipes/tee-wallet-migration-guide
+User must be logged in to import an embedded wallet
+Failed to import wallet
+Failed to create wallet
+This wallet does not support setting recovery methods
+User must be logged in to interact with embedded wallets
+Unable to recover wallet
+Cannot switch active user because the user ID is not saved on this device
+Unable to access storage
+Unauthenticated requests require sessions.mode to be set to "multi-user"
+Unable to load clientId
+Unable to generate uuidv4
+Unable to delete clientId
+unknown error
+[privy:getAccessToken] expected token received null
+[privy:getAccessToken] expected new token in response received existing
+[privy:getAccessToken] expected new token in storage received existing
+[privy:getAccessToken] unable to refresh inactive token
+User switching requires sessions.mode to be set to "multi-user"
+Cannot switch active user because the refreshed user did not match the requested user ID
+A wallet must be provided in the init step or as an argument to linkWithSiwe
+A message must be generated and signed before being used to link a wallet to privy
+A wallet must be provided in the init step or as an argument to loginWithSiwe
+A message must be generated and signed before being used to login to privy with a wallet
+Error destroying session
+Error preparing session revocation
+Must be logged in to revoke delegated wallets
+revokeWallets is only supported for on-device execution and this app uses TEE execution. Use the useSessionSigners hook to manage server side access on behalf of your users. Learn more https://docs.privy.io/recipes/tee-wallet-migration-guide
+Auth session oauth returned invalid credentials
+Cannot operate with this wallet address
+Invalid connected app
+Cannot transact against a read-only provider app
+Wallet operations require a valid token
+Wallet request expired before it could be sent. Please try again.
+Wallet does not support disconnect
+Wallet does not support signMessage
+Wallet does not support signTransaction
+Wallet does not support signAndSendTransaction
+typeof Promise
+r.value,a=e.data.length
+t)&&(t=n.value):n.kind===`max`&&(e===null||n.value
+r.exactLength.value,i=t.data.length
+e.length)&&(t=e.length);for(var n=0,r=Array(t);n
+s?`TOO_SHORT`:a[a.length-1]
+&&e instanceof ShadowRoot||
+this._cGroup)for(let n=this._cGroup;n
+=this.length||this.groupSizes[e]===0)return t;let n=this.groupSizes[e],r=this.indexOfGroup(e),i=r+n;for(let e=r;e
+typeof ShadowRoot
+0)o++;else if(t===42&&o+1
+1;for(let n=0;n
+,void 0,
+. Ensure you wait until
+No Solana accounts found in wallet
+<no response>
+in c.options&&delete c.options.query,
+=400&&c.response.status
+Multiple PrivyProvider instances found
+Found multiple instances of PrivyProvider, ensure there is only one mounted in your application tree.
+`useWallets` was called outside the PrivyProvider component
+Failed to get account entropy details
+Failed to find primary wallet
+User does not have an HD Ethereum wallet. To export an imported wallet, pass the `address` of the wallet to `exportWallet`.
+Must provide a valid Ethereum address.
+Apex Wallet
+Core Wallet
+Bifrost Wallet
+Brave Wallet
+Coin98 Wallet
+Coinbase Wallet
+Dawn Wallet
+Desig Wallet
+Ripio Portal
+Rabby Wallet
+SafePal Wallet
+!!String(e).toLowerCase().match(/^(([^
+JWTs must use Compact JWS serialization, JWT must be a string
+JSON RPC 2.0
+The JSON sent is not a valid Request object.
+The method does not exist / is not available.
+Internal JSON-RPC error.
+Invalid input.
+Resource not found.
+Resource unavailable.
+Transaction rejected.
+Method not supported.
+Request limit exceeded.
+User rejected the request.
+The requested account and/or method has not been authorized by the user.
+The requested method is not supported by this Ethereum provider.
+The provider is disconnected from all chains.
+The provider is disconnected from the specified chain.
+Unrecognized chain ID.
+Unspecified error message.
+Unspecified server error.
+Ethereum Provider custom errors must provide single object argument.
+"message" must be a nonempty string
+Must specify string message.
+"code" must be an integer.
+"message" must be a nonempty string.
+Expected a single, non-array, object argument.
+'args.method' must be a non-empty string.
+'args.params' must be an object or array if provided.
+No RPC URL set for chain
+No valid session found, try requestAccounts before other methods
+Invalid session
+options should be object or undefined
+Argument is not a number
+Expect argument to be non-empty array
+secret must be 256 bits
+Helvetica Neue
+Coinbase Wallet SDK UI is already attached
+Unrecognized chain ID. Try adding the chain using addEthereumChain first.
+Type is required
+unable to add ethereum chain
+addresses is not an array
+Unknown Ethereum address
+Ethereum address is unavailable
+Error checking Cross-Origin-Opener-Policy:
+Popup was blocked. Try again.
+Popup window was blocked
+Request rejected
+Attribution cannot contain both auto and dataSuffix properties
+Bytes values must be of type `Bytes`.
+unknown level
+outputLen bigger than keyLen
+key length must be undefined or 1..
+salt must be undefined or
+personalization must be undefined or
+getNearUint8ArrayFromBytes: Unexpected result type from bytes array
+Invalid signed transaction: missing 'txn' field
+Uint8Array expected, got
+options must be defined
+Non little-endian hardware is not yet supported
+nonce / iv required
+cipher output not supported
+invalid output length, expected
+, got:
+invalid output, must be aligned
+arx: counter overflow
+arx: invalid block position
+core must be a function
+arx: extended nonce must be 24 bytes
+invalid tag
+expected Uint8Array
+expected valid options object
+cannot specify opts in two arguments
+invalid field element: outside of range 0..ORDER
+invalid wNAF
+invalid scalar
+invalid scalar: out of range
+recovery id invalid
+recovery id 2 or 3 invalid
+point at infinify
+invalid signature, expected Uint8Array, hex string or Signature instance
+Invalid method.
+Invalid event.
+Invalid update request.
+Invalid extend request.
+Invalid session settle request.
+Unauthorized method.
+Unauthorized event.
+Unauthorized update request.
+Unauthorized extend request.
+User rejected.
+User rejected chains.
+User rejected methods.
+User rejected events.
+Unsupported chains.
+Unsupported methods.
+Unsupported events.
+Unsupported accounts.
+Unsupported namespace key.
+User disconnected.
+Session settlement failed.
+Unsupported wc_ method.
+Not initialized.
+No matching key.
+Restore will override.
+Missing or invalid.
+Unknown type.
+Mismatched topic.
+Non conforming namespaces.
+Alphabet too long
+is ambiguous
+Expected Uint8Array
+Could not decode varint
+Unknown type, must be binary type
+Failed to Publish Payload
+Publishing custom payload
+Unsubscribing Topic
+Successfully Unsubscribed Topic
+Failed to Unsubscribe Topic
+Outgoing Relay Payload
+Outgoing Relay Subscribe Payload stalled
+rpcBatchSubscribe failed, please try again
+rpcBatchFetchMessages failed, please try again
+Setting subscription
+Getting subscription
+Deleting subscription
+Starting WS connection skipped because the client has no topics to work with.
+Waiting for existing connection attempt to resolve...
+Existing connection attempt resolved
+Restarting transport...
+No internet connection detected. Please restart your network and try again.
+Batch message events is empty. Ignoring...
+Error while processing batch message event:
+Connection interrupted while trying to connect
+Connection interrupted while trying to subscribe
+Incoming Relay Payload
+Emitting Relayer Payload
+[object Undefined]
+[object Null]
+[object RegExp]
+[object String]
+[object Number]
+[object Boolean]
+[object Arguments]
+[object Symbol]
+[object Date]
+[object Map]
+[object Set]
+[object Array]
+[object Function]
+[object ArrayBuffer]
+[object Error]
+[object DataView]
+[object Uint8Array]
+[object Uint8ClampedArray]
+[object Uint16Array]
+[object Uint32Array]
+[object BigUint64Array]
+[object Int8Array]
+[object Int16Array]
+[object Int32Array]
+[object BigInt64Array]
+[object Float32Array]
+[object Float64Array]
+persisting public key to local storage
+removing verify v2 public key from storage
+error validating attestation
+resolve: jwt attestation expired
+JWT attestation expired
+Failed to copy global core
+Core Initialization Success
+Failed to get global WalletConnect core
+Proposal expired
+Request expired. Please try again.
+Signature verification failed
+Duplicate pairings clean up finished
+Request queue already active, skipping...
+No listener for session_proposal event
+session request queue is already active.
+session request queue is empty.
+requiredNamespaces are deprecated and are automatically assigned to optionalNamespaces
+chains is required and must be a non-empty array
+uri is required parameter
+domain is required parameter
+nonce is required parameter
+Multi-namespace requests are not supported. Please request single namespace only.
+Error getting TVF params
+SignClient Initialization Success
+SignClient Initialization Failure
+Failed to fetch transaction receipt:
+ChainId not found
+Cleaning up inactive pairings...
+Failed to cleanup pending pairings
+abortPairingAttempt is deprecated. This is now a no-op.
+Failed to get session
+SignClient Initialized
+Sign Client not initialized
+Connection request reset. Please try again.
+Unable to connect
+No networks found for WalletConnect·
+To use QR modal, please install @reown/appkit package
+Could not generate WalletConnectModal Instance
+Failed to load persisted session, clearing state...
+Prompting connection via Base Account
+Unable to retrieve accounts
+Prompting connection via Coinbase Wallet
+Coinbase Smart Wallet
+Resetting WalletConnect connection for new wallet
+Prompting WalletConnect connection
+Enabling WalletConnect provider
+Starting connector initialization
+All external wallets disabled, skipping initialization
+Detected injected providers
+Creating Ethereum wallet connector
+Found existing connector, reusing
+No connector created
+Adding wallet connector
+Failed to initialize connector
+Email and email code must be set prior to calling authenticate.
+Email must be set when initialzing authentication.
+Email, email code, and an old email address must be set prior to calling update.
+Linking is not supported for the guest flow
+Invalid code during OAuth flow.
+User denied confirmation during OAuth flow
+Invalid code during oauth flow.
+[OAuth AuthFlow] Authorization and state codes code must be set prior to calling link.
+Authentication error.
+Provider must be set when initializing OAuth authentication.
+SiweFlow has no wallet instance
+SiweFlow has no client instance
+Could not prepare SIWE message
+UI SiweFlow has no wallet instance
+phone number and sms code must be set prior to calling authenticate.
+phone nNumber must be set when initialzing authentication.
+Phone number, sms code, and an old phone number must be set prior to calling update.
+Error authenticating session
+:e instanceof kO?
+:e instanceof OO?
+:e instanceof bO?
+:e instanceof gO?
+Error linking account
+Session has no API instance
+Session has no PrivyClient instance
+Unable to refresh tokens - token is missing or no longer valid
+No auth flow in progress.
+Error fetching cross app provider details
+Unable to fetch token price for SOL
+Unable to fetch Farcaster signer status
+Invalid transfer account type
+Tempo transactions require at least one call
+Tempo transaction calls require a `to` address
+parseInt(e,16));for(;r.length
+32)throw Error(`Invalid bytes
+256)throw Error(`Invalid uint
+r)throw Error(`Supplied uint exceeds width: `+r+` vs `+a);if(l
+256)throw Error(`Invalid int
+typeof e==`bigint`&&xa
+=Qa.zero&&e
+r&&(s-=a,c+=Os);let l=t*r,u=l+Math.abs(s)-1,d=s===0,f=s
+0;e--)n=n.add(u[e]),t=t.add(n);if(f=f.add(t),e!==0)for(let e=0;e
+=yp)throw Error(`arx: counter overflow`);if(l.length
+5&127;for(let t=0;t
+13;e[1]&=8191;for(let t=2;t
+13,n[0]&=8191;for(let t=1;t
+13,n[t]&=8191;n[9]-=8192;let i=(r^1)-1;for(let e=0;e
+255*i)throw Error(`Length should be
+typeof e==`bigint`&&Hp
+r&&(s-=a,c+=Lm);let l=t*r,u=l+Math.abs(s)-1,d=s===0,f=s
+`u`)throw Error(`Missing sender public key for type 1 envelope`);let n=typeof e.senderPublicKey
+=255)throw TypeError(`Alphabet too long`);for(var n=new Uint8Array(256),r=0;r
+=o)throw Vb.bytes=0,RangeError(`Could not decode varint`);a=e[i++],n+=r
+(this.isInitialized(),typeof this.get(e)[ig(t)]
+t.toString().slice(0,-3)
+o?d--:d++,i.__u|=65536))):i=e.__k[r]=null;if(u)for(r=0;r
+Initializing Solana connector
+Attempting Solana auto-connect
+Solana auto-connect successful
+Solana wallet connected but has no accounts
+Solana wallet not connected after prompt
+Disconnecting Solana wallet
+Error disconnecting Solana wallet
+Prompting Solana connection
+Chromium OS
+Mac OS
+Browser
+Wallet is not currently connected.
+Unable to determine current chainId.
+Unrecognized chain ID
+Failed to get chainId from provider, using default
+Unable to subscribe to wallet provider event
+Wallet provider does not support event subscriptions
+Unable to remove wallet provider listener
+connect called for an uninstalled wallet via the EthereumNullConnector
+disconnect called for an uninstalled wallet via the EthereumNullConnector
+The "listener" argument must be of type Function. Received type
+The value of "defaultMaxListeners" is out of range. It must be a non-negative number. Received
+Parse error
+Invalid Request
+Method not found
+Invalid params
+Internal error
+Server error
+Missing code for JSON-RPC error
+Missing message for JSON-RPC error
+getaddrinfo ENOTFOUND
+connect ECONNREFUSED
+Generator is already executing.
+Object is not iterable.
+Symbol.iterator is not defined.
+Symbol.asyncIterator is not defined.
+attempted to get private field on non-instance
+attempted to set private field on non-instance
+in n,iterable:
+in Symbol,blob:
+in n,arrayBuffer:
+Headers constructor: expected name/value pair to be length 2, found
+Already read
+could not read FormData body as blob
+could not read as ArrayBuffer
+could not read FormData body as text
+Connection already closed
+=l||t[d]==null)break;f
+=l||t[d]===void 0)break;f
+=l)break;f
+`u`&&typeof navigator
+=200&&this.status
+,/Windows ME/],[
+,/Windows CE|WinCE|Microsoft Pocket Internet Explorer/],[
+Non-zero carry
+character
+The type of key must be string or number but
+Invalid stack state. Released state is not on top of the stack.
+This module is not supported in the current JavaScript engine because DataView does not throw RangeError on out-of-bounds access
+Insufficient data
+The key __proto__ is not allowed
+utf8ToBytes expected string, got
+invalid exponent, negatives unsupported
+invalid modulus
+Cannot find square root: likely non-prime P
+Contexts/pre-hash are not supported
+coordinate
+ExtendedPoint expected
+Point.fromHex: invalid y coordinate
+hashed private key
+Illegal salt, expected Uint8Array with length is 16
+Illegal personal, expected Uint8Array with length is 16
+Incorrect output length, should be in [1, 32]
+Incorrect key length, should be in [1, 32]
+[unstorage] Cannot stringify value!
+ws does not work in the browser. Browser clients must use the native WebSocket object
+=255)throw TypeError(`Alphabet too long`);let t=new Uint8Array(256);for(let e=0;e
+0,l=new Uint8Array(c);for(;a
+255)return;let i=t[r];if(i===255)return;let o=0;for(let e=c-1;(i!==0||o
+=224)t=e-256;else if(e
+typeof e==`bigint`&&hn
+o&&(n-=u,i+=er);let a=t,f=t+Math.abs(n)-1,p=e%2!=0,m=n
+s&&(n-=l,i+=er),n===0)continue;let o=r[t+Math.abs(n)-1];n
+0;e--)n=n.add(c[e]),t=t.add(n);if(u=u.add(t),e!==0)for(let e=0;e
+=o)throw Hi.bytes=0,RangeError(`Could not decode varint`);a=e[i++],n+=r
+=o)throw Ro.bytes=0,RangeError(`Could not decode varint`);a=e[i++],n+=r
+64)throw Error(`Illegal output length, expected 0
+64)throw Error(`Illegal key, expected Uint8Array with 0
+-1;)n++,r=e.indexOf(`:`,r+1);return n
+typeof WebSocket
+Malformed JSON-RPC error with no message attribute
+[Cross-App AuthFlow] Authorization and state codes code must be set prior to calling authenicate.
+User denied confirmation during cross-app auth flow
+Invalid input to create wallet
+Created wallet was not found in the updated user.
+Cannot request a signature with this wallet address
+cannot transact against a read-only provider app
+Invalid subject
+Must have an existing embedded wallet to create an additional wallet.
+User owned recovery not yet supported for this app.
+Failed to connect to wallet proxy
+Invalid input, use `createAdditional` instead of `walletIndex` to create additional wallets.
+User already has an embedded wallet.
+Failed to connect to wallet
+Transaction confirmation timed out
+Transaction confirmation failed
+signTransaction was not injected
+signAndSendTransaction was not injected
+signMessage was not injected
+Xt(e.length
+!e||e.walletIndex
+Wallet proxy not initialized
+User must be authenticated
+Expected a Address.
+Beneficiary name
+Beneficiary address
+Account number
+Routing number
+Bank name
+Bank address
+Account holder
+BIC / SWIFT
+PIX code
+Sort code
+This network does not yet support wallet ownership verification. Try a different network.
+"version" cannot be null or undefined
+"version" should be in range from 1 to 40
+"toSJISFunc" is not a valid function.
+Param is not a string
+BitMatrix size must be defined and greater than 0
+bad maskPattern:
+Encoder not initialized
+Invalid QR Code version
+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:
+Invalid SJIS character:
+" cannot be encoded with mode
+Invalid data
+The amount of data is too big to be stored in a QR Code
+=0&&e.bit
+`,f=`viewBox="0 0 `+l+` `+l+`"`,p=`
+Could not find a path from
+Turnstile has not been loaded
+No response received
+Failed to get response
+Turnstile has not been loaded or container not found
+Execution mode is not set to "execute"
+Microsoft Edge
+Windows Phone
+Windows Mobile
+An unknown error occurred
+Invalid DSN
+Sentry has not been initialized
+Exceeded maximum retries
+Account not found
+this app
+Try logging in again
+close modal
+Terms of Service
+Unable to add funds
+One last step
+By signing up, you agree to our terms and privacy policy.
+No thanks
+You don't have access to this app
+Have you been invited?
+Try another account
+,url:void 0,chains:[
+Connecting wallet via deeplink
+Connecting wallet via connector
+Wallet connection returned null
+Using install flow for wallets that do not support WalletConnect.
+Attempting injected EVM connection
+Attempting injected Solana connection
+Using fallback direct connector
+Math.abs(e-t)
+=t)return!1;for(let e=0;e
+=1.5&&(this._clampedAdjustment=null),this.scrollAdjustments=0;let n=this.getScrollOffset();this.scrollDirection=t?n===e?this.scrollDirection:n
+t)return;if(this._iosDeferredAdjustment
+this.getDistanceFromEnd()
+=r+n-this.options.scrollPaddingEnd)t=`end`;else if(i.start
+e[t].start,n),s=o;if(r===1)for(;s
+For the best experience, connect only one wallet at a time.
+Don't see your wallet? Check your other browser windows.
+Still here?
+Try connecting again
+t verify your identity`,"signUpForCardView.rejectedSubtitle":`Your card application could not be approved.`,"signUpForCardView.errorTitle":`Something went wrong`,"signUpForCardView.errorSubtitle":`We couldn
+Invalid funding data
+Solana testnets are not supported for bridging
+Something went wrong
+Invalid transaction request
+Unable to fetch quotes for bridging
+0n));if(n.length
+e.value));if(r.length
+Custom Provider
+Unexpected object:
+Transfer from another network
+You need more funds on the
+network. Bridge from another blockchain network.
+ot(e)?e.document:st(e)?e:e?.ownerDocument??(typeof document
+R(e)?.defaultView??(typeof window
+0)&&typeof PointerEvent
+t.right||e.bottom
+=0;--e)if(!t.resolveDisabled(n[e],e,n))return e;return r;case 2:for(let e=i+1;e
+=0;--e)if(!t.resolveDisabled(n[e],e,n))return e;return r;case 4:for(let r=0;r
+e.overflows[0]
+r.clientWidth;if(n&&_(r).direction===`rtl`&&(i=e.offsetX
+=-.5,o=t.scrollHeight-t.clientHeight,s=n
+=C.bottom-1||T===`bottom`&&s
+=C.right-1||T===`right`&&n
+Passkeys updated
+Unknown device
+Last used:
+View all
+Verify with Touch ID, Face ID, PIN, or hardware key
+Takes seconds to set up and use
+Use your passkey to verify transactions and login to your account
+Cannot link more passkeys to account.
+Unknown error occurred.
+Cannot unlink a passkey enrolled in MFA
+Unable to fetch SOL price
+We were unable to complete the bridging transaction. Funds will be refunded on your wallet.
+Unable to fetch token details
+returned no data
+Simulated token transfer failed with error, fetching bridge options.
+rejected the request
+e.balance===0n));if(r.length
+e.value));if(o.length
+and enter your code below.
+Please check
+for a
+WhatsApp
+message from
+an email
+a message
+Incorrect code
+Issue verifying code
+CAPTCHA passed successfully.
+Checking that you are a human...
+If you use an adblocker or VPN, try disabling and re-attempting.
+You did not pass CAPTCHA. Please try again.
+If you've completed your purchase in Coinbase, your funds are on the way and may take a few minutes to appear.
+There was an error completing Coinbase Onramp flow.
+Almost done. Retrieving transaction status from Coinbase
+Go back to Coinbase Onramp to finish funding your account.
+Use a different wallet
+Browser Extension
+Switching networks
+Don’t see your wallet? Check your other browser windows.
+This Coinbase Wallet address is not your Coinbase.com deposit address.
+You’re good to go!
+Unable to connect wallet
+Switch your wallet to the requested network.
+Click to continue to open and connect MetaMask.
+Open your mobile wallet app to continue
+This connects Coinbase Wallet, not your Coinbase.com account.
+Sign with your wallet
+Sign to verify
+Wallet was already linked.
+You're good to go!
+Sign the message in your wallet to verify it belongs to you.
+Click continue to open and connect MetaMask.
+Ledger requires a transaction to verify your identity. You'll sign a transaction that performs no onchain action.
+Provider app
+Continue with Email
+Farcaster
+Rainbow, Phantom, or Coinbase Wallet
+Phantom or Solflare
+Continue with
+Other socials
+Log in with email or socials
+Log in with sms or socials
+Continue with email or sms
+Continue with email
+Continue with sms
+Log in with a social account
+Continue with a wallet
+Other wallets
+More options
+Authentication failed
+User canceled flow
+Missing data for Screen
+Please try again.
+Enable offline access
+Not now
+User declined delegating actions.
+You've successfully revoked permissions.
+Revoke offline access to wallet
+Transfer complete
+Route not available
+This deposit route isn't supported right now. Try a different token or network.
+Address restricted
+This address cannot be used for deposits due to compliance restrictions.
+Unable to set up refund address
+We couldn't create a wallet to receive refunds on this chain. Please try again or select a different network.
+Not enabled
+Deposit addresses are not enabled for this app.
+Not signed in
+Please sign in to continue with your deposit.
+Taking longer than expected
+Your funds are safe. The deposit is still being processed — check back later.
+We couldn't complete your request. Please try again.
+Reference:
+Transfer in progress
+Your deposit was received and the transfer is now processing.
+View on block explorer ↗
+Estimated rate based on current market conditions. Final execution price may vary depending on transfer size and routing.
+We're on it. Please try again later.
+User must be authenticated and have a Privy wallet before it can be connected
+For on-device first-class chain wallets, entropyId and entropyIdVerifier are required
+All set!
+You've successfully created an account.
+Your account is secured.
+Export wallet
+Copy either your private key or seed phrase to export your wallet.
+Learn more
+Never share your private key or seed phrase with anyone.
+Your wallet
+User must be authenticated before exporting their wallet
+User wallet creation failed
+Invalid args to create wallet
+Invalid argument: length must be a number greater than or equal to 1
+Invalid argument: start must be a number greater than or equal to 0
+Invalid range: range must contain at least two values
+your password
+This password is used to secure your account.
+Use it to log in on a new environment, like another browser or device.
+Secure Your Account
+Please set a password to secure your account.
+Losing access to this password and this device will make your account inaccessible.
+Add password
+Exited before password was added to wallet
+Transaction failed
+Check the
+No value
+This account has already been linked to another user.
+Something went wrong. Try again.
+Too many requests. Please wait before trying again.
+The request timed out. Try again.
+noreferrer noopener
+Add a signer to Farcaster
+Open Farcaster app
+Requesting signer from Farcaster
+This should only take a moment
+Take me to Farcaster
+Or copy this link and paste it into a phone browser to open the Farcaster app.
+Connect failed
+The request was rejected. Please try again.
+Base UI
+stable both-edges
+User exited flow
+user is not authenticated
+Enter a valid amount and try again.
+[FiatOnramp:Stripe] registerWalletAddress failed:
+Unexpected response shape from provider_session_url for Stripe
+The card was declined. Try another Visa or Mastercard.
+The card has insufficient funds. Try another Visa or Mastercard.
+The card does not support crypto purchases. Try another Visa or Mastercard.
+This card is not supported. Try a Visa or Mastercard.
+The card issuer declined repeated attempts. Wait a few minutes before trying again, or use another card.
+The card has expired. Try another Visa or Mastercard.
+The security code is incorrect. Check the card details or try another card.
+The card number is incorrect. Check the card details or try another card.
+The payment could not be processed. Try again or use another card.
+The payment failed. Try another Visa or Mastercard.
+Checkout failed: transaction_limit_reached
+quote expired
+Missing stripeSessionId
+Cannot recreate session: missing customer or payment token
+Session unexpectedly inactive after authentication
+United States
+Country is required
+Add address
+Enter your residential address as it appears on your government-issued ID.
+Birth city is required
+Place of birth
+Enter your city and country of birth.
+City of birth
+Invalid format for:
+Search nationality
+This app
+Connect to Link
+Create a Link account
+With Link, you can securely save your information for faster checkout.
+Amount too low
+Please choose a higher amount to continue.
+Unable to get quotes
+Select payment method
+Choose how you'd like to pay
+1,rn=`android`,an=tn===rn||en.includes(rn),on=!nn&&tn.startsWith(`mac`);tn.startsWith(`win`),!an&&/^(linux|chrome os)/.test(tn);var sn=on||nn,cn=typeof CSS
+n.clientHeight,l=r.direction===`rtl`,u=c&&(l?e.offsetX
+0?n-1:void 0):e.key===a?(e.preventDefault(),t=n
+e===2||e===3)))return!1;let n=_c(t),r=10;for(let e=0;e
+=`0`&&e.key
+Confirm transaction
+Estimated fee
+Simulation failed: Blockhash not found
+t complete account setup. This isn
+once approved with instructions for completing your deposit.
+Verify your identity to continue
+Finish verification with Persona — it takes just a few minutes and requires a government ID.
+This app uses Bridge to securely connect accounts and move funds. By clicking "Accept," you agree to Bridge's
+Privacy Policy
+Unable to create customer
+Unexpected user state
+User KYC rejected.
+Unexpected state
+Unable to begin kyc flow.
+User cancelled funding
+Unable to initialize flow
+:l?.erc20Address?void 0:
+wallet
+Something went wrong adding funds from Moonpay. Please try again or use another method to fund your wallet.
+Could not log in with provider
+It looks like you're using an in-app browser. To log in, please try again using an external browser.
+Follow the instructions below to get started.
+Reload the page to use your wallet
+to see if the account holds any assets.
+missing account transfer inputs
+LinkedIn profile
+Cross-app account
+is associated with another account
+to this account instead? This will delete your other account.
+Connect your email
+Add your email to your account
+Connect your phone
+Add your number to your account
+Could not connect with wallet
+Please check that Phantom multichain is enabled and try again.
+,errMsg:void 0,showCopyButton:!0,balance:
+Must be logged in to manage MFA
+Missing modal data for MFA enrollment screen.
+Removing your passkey will remove as a verification method.
+Choose a verification method
+To add or delete verification methods, verification is required.
+How would you like to verify your identity?
+Set up passkey verification
+Add a new passkey
+Enable your passkeys for verification
+View All
+Enable passkeys
+Enter enrollment code
+To continue, enter the 6-digit code generated from your authenticator app
+You have exceeded the maximum number of attempts. Please close this window and try again in 10 seconds.
+The code you entered is not valid
+You have exceeded the time limit for code entry. Please try again in 30 seconds.
+Verification canceled
+Unknown error
+Missing modal data for MFA verification screen.
+Verify your identity
+By providing your mobile number, you agree to receive text messages from
+. Some carrier charges may apply
+SMS verification added
+From now on, you'll enter the verification code sent to your mobile device whenever you use your
+wallet.
+To continue, enter the 6-digit code sent to
+Add more security
+does not have any verification methods enabled.
+moonpay_symbol_wht 2
+You've funded your account!
+It may take a few minutes for the assets to appear.
+Processing payment
+This may take up to a few hours. You will receive an email when the purchase is complete.
+In Progress
+Go back to MoonPay to finish funding your account.
+Log in or create a new account?
+Create a new account with a passkey or use a passkey to log in to an existing account.
+Create new account
+Log in with a passkey
+Waiting for passkey
+:return t?
+You've successfully logged in with your passkey.
+An error has occurred, please try again.
+Recover your account
+[OAuth AuthFlow] Authorization and state codes code must be set prior to calling authenicate.
+Missing client
+Unable to open recovery OAuth popup
+Recovery OAuth failed
+Embedded wallet not found
+Failed to set recovery on wallet
+Unsupported recovery action
+RecoveryOAuthScreen should never be called with a wallet that specifies recoveryMethod: `user-passcode`
+Back up
+Google Drive
+Apple iCloud
+backed up
+Backing up
+Select a method for logging in on new devices and recovering your account.
+User exited set recovery flow
+Update backup method
+Secure your account
+password
+Transaction complete!
+You're all set.
+All Done
+Insufficient balance for transaction
+Insufficient funds for gas * price + value
+insufficient funds
+gas required exceeds allowance
+There was an issue preparing your transaction
+The user rejected the request
+Confirm address
+Confirm action
+to transfer tokens on your behalf.
+from transferring tokens on your behalf.
+Transaction scan failed
+in progress
+:void 0,
+This has been flagged as a potentially deceptive request. Approving could put your assets or funds at risk.
+This transaction transfers tokens to a known malicious address. Proceeding may result in the loss of valuable assets.
+Approval amount
+,address:ee,balance:E,errMsg:j||g||p||!d?void 0:
+There was an error preparing your transaction. Your transaction request will likely fail.
+Error message
+Transaction hash
+Copy this hash to view details about the transaction on a
+Jupiter swap program instruction 'claim' not implemented
+Jupiter swap program instruction 'claim_token' not implemented
+Jupiter swap program instruction 'close_token' not implemented
+Jupiter swap program instruction 'create_open_orders' not implemented
+Jupiter swap program instruction 'create_program_open_orders' not implemented
+Jupiter swap program instruction 'create_token_ledger' not implemented
+Jupiter swap program instruction 'create_token_account' not implemented
+Jupiter swap program instruction 'route' not implemented
+Jupiter swap program instruction 'route_with_token_ledger' not implemented
+Jupiter swap program instruction 'set_token_ledger' not implemented
+Jupiter swap program instruction 'shared_accounts_route_with_token_ledger' not implemented
+User exited the modal before submitting the transaction
+Add funds
+Funding wallet is not enabled
+Successfully connected with Telegram
+Verifying connection to Telegram
+Just a few moments more
+More wallets
+d like to use going forward. We
+Update your phone number
+Add the phone number you'd like to use going forward. We'll send you a confirmation code
+User is required to have an phone number to update it.
+something went wrong
+options was missing required publicKey property
+Registration ceremony was sent an abort signal
+Discoverable credentials were required but no available authenticator supported it
+User verification was required during automatic registration but it could not be performed
+User verification was required but no available authenticator supported it
+The authenticator was previously registered
+No entry in pubKeyCredParams was of type "public-key"
+No available authenticator supported any of the specified pubKeyCredParams algorithms
+User ID was not between 1 and 64 characters
+The authenticator was unable to process the specified options, or could not create a new credential
+Cancelling existing WebAuthn API call for new one
+Manually cancelling existing WebAuthn API call
+Authentication ceremony was sent an abort signal
+The authenticator was unable to process the specified options, or could not create a new assertion signature
+Could not resolve "@farcaster/mini-app-solana" imported by "@privy-io/react-auth". Is it installed?
+USD Coin
+Invalid chainId
+Error resolving name
+Error fetching name suggestions
+Error fetching names for address
+Network not found
+Address or auth connector not found
+Unauthorized: origin not allowed
+JWT validation error: JWT Token is not yet valid
+Unauthorized: invalid key
+Network Not Found
+The specified network is not recognized. Please ensure it is included in the `networks` array of your `createAppKit` configuration.
+Invalid App Configuration
+Network Error: Wallet Load Failed
+Failed to load the embedded wallet. This may be due to network issues or server downtime. Please check your network connection and try again shortly. Contact support if the issue persists.
+Wallet Request Timeout
+The request to the embedded wallet timed out. Please check your network connection and try again shortly. Contact support if the issue persists.
+Unverified Domain
+Embedded wallet load failed. Ensure your domain is verified in https://dashboard.reown.com.
+Session Expired
+Your session is invalid or expired. Please check your system’s date and time settings, then reconnect.
+Invalid Project ID
+The specified project ID is invalid. Please visit https://dashboard.reown.com to obtain a valid project ID.
+Project ID Missing
+No project ID is configured. You can create and configure a project ID at https://dashboard.reown.com.
+Server Error
+Rate Limited
+You have been rate limited while retrieving App Configuration. Please wait a few minutes and try again. Contact support if the issue persists.
+Inactive Namespace Not Connected
+Invalid Email Address
+Please enter a valid email address
+pino: transmit option must have a send function
+Solana Devnet
+Solana Testnet
+in e.params&&
+UniversalAdapter:setUniversalProvider - namespace is required
+[Reown Config] Failed to fetch remote project configuration. Using local/default values.
+[Reown Config] Failed to process the configuration from Cloud. Using default values.
+ReownAuthentication option is enabled, SIWX configuration will be overridden.
+openSend: caipAddress not found
+ConnectionControllerClient and NetworkControllerClient must be set
+Adapter not found
+reconnectExternal: namespace not found
+reconnectExternal: adapter not found
+connectExternal: namespace not found
+connectExternal: adapter not found
+MetaMask Wallet
+Error disconnecting previous connector
+Error disconnecting existing connections:
+AppKit couldn't sync existing connection
+CaipNetwork not found
+,errorMessage:e instanceof Error?e.message:
+AppKit:getAccount - namespace is required
+=pr.zero&&e
+=zs)throw Error(`arx: counter overflow`);if(l.length
+typeof e==`bigint`&&cc
+r&&(s-=a,c+=rl);let l=t*r,u=l+Math.abs(s)-1,d=s===0,f=s
+=o)throw Em.bytes=0,RangeError(`Could not decode varint`);a=e[i++],n+=r
+(this.isInitialized(),typeof this.get(e)[wu(t)]
+Trust Wallet
+Magic Eden
+Bitget Wallet
+Xverse Wallet
+OKX Wallet
+Browser Wallet
+e.name!==`Browser Wallet`),u=r?.length||0,f=n?.length||0,p=c.length||0,m=+!!o,g=+!!s,_=u+f+p+m+g,v=Math.max(0,4-_);return v
+EVM Networks
+Unknown Network
+[big.js]
+Invalid
+decimal places
+rounding mode
+Division by zero
+Imprecise conversion
+valueOf disallowed
+User rejected the request
+Namespace is required for CONNECTED_CONNECTOR_ID
+Open and continue in the wallet app
+Unable to sync connections to storage
+Unable to get connections from storage
+Unable to get disconnected connector ids
+Unable to get transactions cache
+?e.issues[0].message:e instanceof Error?e.message:
+Network not supported for Swaps
+Token Balance Unavailable
+Requested RPC call is not allowed
+Action not allowed
+Unable to sync theme to auth connector
+Popup closed
+Failed to initiate social connection
+Transactions can't be fetched without an accountAddress
+Failed to disconnect
+Failed to disconnect connector
+insufficient liquidity
+Insufficient liquidity
+ChainController:addAdapter - adapter must have a namespace
+Chain is required to update chain account data
+ChainController:switchActiveNetwork - namespace is required
+ChainController:getAllRequestedCaipNetworks - chainAdapter must have a namespace
+ChainController:getAllApprovedCaipNetworkIds - chainAdapter must have a namespace
+Chain is required to set account prop
+0&&t.charAt(--i)==`0`;);for(e.e=n-r-1,e.c=[],n=0;r
+5||i[0]===5&&(r||i[1]!==g))),i.length=1,r?(e.e=e.e-t+1,i[0]=1):i[0]=e.e=0;else if(t
+1?`.`+i.slice(1):``)+(r
+a)for(r-=a;r--;)i+=`0`;else r
+1&&(i=i.charAt(0)+`.`+i.slice(1));return e.s
+c^t?1:-1;for(o=(s=r.length)
+_?1:-1;else for(f=-1,d=0;++f
+c)throw Error(ee);for(n=ae(new n.constructor(n),++e,t);n.c.length
+c)throw Error(ee);for(n=ae(new n.constructor(n),e+n.e+1,t),e=e+n.e+1;n.c.length
+c)throw Error(m+`precision`);for(n=ae(new r(n),e,t);n.c.length
+yt,t=F.lastFlush+bt
+=r.HTTP_STATUS_CODES.SERVER_ERROR&&t
+CSSResult is not constructable. Use `unsafeCSS` or `css` instead.
+function must be a
+function result: `+e+`. Use
+font-family: KHTeka
+T(e)||typeof e?.[Symbol.iterator]==`function`,E=`[ \f\r]`,D=/
+`:``,o=D;for(let t=0;t
+yarn build && tsc --watch & nodemon --watch dist --delay 1 --exec tsc-alias
+tsc --noEmit
+biome lint .
+biome format . --write
+State loaded from storage couldn't be migrated since no migrate function was provided
+Illegal argument
+use strict
+in c?c.serviceWorker.controller?
+Analytics SDK:
+You are setting the threshhold for the batch limit to be greater than 30. This may cause request overload.
+Started new session:
+userId not set in Logged-in
+missing logData
+Batch Metrics
+Initialized Analytics IndexedDB:
+Batch Traces
+@@toPrimitive must return a primitive value.
+in performance&&
+Failed to execute inlined telemetry script
+transform 0.2s ease-out
+Base Account
+This action requires your permission to open a new window.
+Smart Account is not deployed.
+This could arise when:
+- No `factory`/`factoryData` or `initCode` properties are provided for Smart Account deployment.
+- An incorrect `sender` address is provided.
+Gas value overflowed.
+The `handleOps` function was called by the Bundler with a gas limit too low.
+Failed to simulate deployment for Smart Account.
+- Invalid `factory`/`factoryData` or `initCode` properties are present
+Smart Account initialization implementation did not create an account.
+- `factory`/`factoryData` or `initCode` properties are invalid
+Smart Account initialization implementation does not return the expected sender.
+Smart Account does not have sufficient funds to execute the User Operation.
+- the Smart Account does not have sufficient funds to cover the required prefund, or
+- a Paymaster was not provided
+Bundler attempted to call an invalid function on the EntryPoint.
+Bundler used an invalid aggregator for handling aggregated User Operations.
+Invalid Smart Account nonce used for User Operation.
+Bundler has not set a beneficiary address.
+Invalid fields set on User Operation.
+User Operation verification gas limit exceeded.
+- the gas used for verification exceeded the `verificationGasLimit`
+User Operation verification gas limit is too low.
+- the `verificationGasLimit` is too low to verify the User Operation
+Bundler Client
+sub account info is not an object
+sub account is invalid
+sub account address is invalid
+sub account factory address is invalid
+sub account factory data is invalid
+No owner account found
+`owner` does not support raw sign.
+unknown factory function
+no global account
+no chain id
+no sub account
+no active account found when getting capabilities
+No shared secret found when encrypting request
+Invalid session: no shared secret found when decrypting response
+could not get subaccount owner account when adding sub account
+no active sub account when sending request to sub account signer
+no active sub account owner when sending request to sub account signer
+no global account found when sending request to sub account signer
+failed to add sub account owner when sending request to sub account signer
+Must call 'eth_requestAccounts' before other methods
+User initiated disconnection
+0)+o;return(s
+typeof e==`bigint`&&Lr
+r&&(s-=a,c+=Di);let l=t*r,u=l+Math.abs(s)-1,d=s===0,f=s
+=Z.zero&&e
+typeof e==`bigint`&&u
+Unknown Domain
+Unknown URI
+Not authenticated
+Search Wallet
+qr code
+<wui-icon size=${he[this.size]} name=${this.icon}></wui-icon>
+<wui-loading-spinner color=${t} size=${e}></wui-loading-spinner>
+Accept connection request in the wallet
+Connection can be declined if a previous request is still active
+<circle cx=${e} cy=${t} fill=${i} r=${s/mt} />
+height: 100%
+<wui-icon size="inherit" color="inherit" name="walletConnect"></wui-icon>
+:return E
+<w3m-connecting-wc-qrcode ?basic=${this.basic}></w3m-connecting-wc-qrcode>
+<wui-icon name="spinner" size="md"></wui-icon>
+<wui-icon name="chevronRight" size="md"></wui-icon>
+Search wallet
+<wui-shimmer width="56px" height="56px"></wui-shimmer>
+<wui-icon size="sm" name="walletConnectBrown"></wui-icon>
+<w3m-all-wallets-list .badge=${this.badge}></w3m-all-wallets-list>
+50?50:this.radius,t=36-e,n=116+t,r=245+t,i=360+t*1.75;return E`
+Copy link
+o.length-8&&n
+`:this.farcaster?E`
+Scan this QR Code with your phone
+Not Detected
+`;case`web`:return E`
+`;case`desktop`:return E`
+`;case`mobile`:return E`
+`;case`qrcode`:return E`
+`;default:return E`
+0?null:r===0||[...n,...e,...t].length
+No Wallet found
+=2;return E`
+Chrome Extension
+iOS App
+Android App
+Website
+Unsupported decorator location:
+can only be used in the
+<slot class=${je(e)}></slot>
+<img src=${y(this.src)} alt=${this.alt} @error=${this.handleImageError} />
+<wui-wallet-image size="sm" name=""></wui-wallet-image>
+<wui-icon size=${t} name=${this.icon}></wui-icon>
+`:this.logo?l`
+`:this.walletIcon?l`
+`:this.showAllWallets&&this.walletIcon?l`
+`:!this.showAllWallets&&!this.imageSrc?l`
+`:this.tagLabel&&this.tagVariant?l`
+,sourceTokenPriceInUSD:0,toToken:void 0,toTokenAmount:
+No address found to swap the tokens from.
+Failed to initialize swap
+Failed to fetch network token price
+Incorrect amount
+Please enter a valid amount
+Failed to check allowance
+createAllowanceTransaction - No source token address found.
+SwapController:createAllowanceTransaction - address is required
+Failed to create approval transaction
+SwapController:createSwapTransaction - address is required
+Transaction error
+Confirm transaction in your wallet
+select visual
+Create Wallet
+All Wallets
+Approve Transaction
+Email Login
+Confirm Email
+Register Device
+Get a Wallet
+Choose Network
+Choose Provider
+Select Token
+Select Currency
+How you pay
+Switch Network
+Upgrade Your Wallet
+Edit Email
+Confirm Current Email
+Confirm New Email
+What is Buy?
+Choose Name
+,SmartSessionCreated:void 0,SmartSessionList:
+<wui-tag variant="accent" size="md">Beta</wui-tag>
+<wui-loading-spinner size="md" color="accent-primary"></wui-loading-spinner>
+:return S
+<w3m-connect-view walletGuide="explore"></w3m-connect-view>
+e.symbol
+`;let e=Ae[this.size];return S`
+Beta
+`:this.showBack&&!s?S`
+By connecting your wallet, you agree to our
+We work with the best providers to give you the lowest fees and best support. More options coming soon!
+How does it work?
+`;case`OnRampProviders`:return S`
+Your connected wallet may not support some of the networks available for this dApp
+What is a network
+`;case`Account`:return S`
+`;case`AllWallets`:return S`
+`;case`ApproveTransaction`:return S`
+`;case`BuyInProgress`:return S`
+`;case`ChooseAccountName`:return S`
+`;case`Connect`:return S`
+`;case`Create`:return S`
+`;case`ConnectingWalletConnect`:return S`
+`;case`ConnectingWalletConnectBasic`:return S`
+`;case`ConnectingExternal`:return S`
+`;case`ConnectingSiwe`:return S`
+`;case`ConnectWallets`:return S`
+`;case`ConnectSocials`:return S`
+`;case`ConnectingSocial`:return S`
+`;case`DataCapture`:return S`
+`;case`DataCaptureOtpConfirm`:return S`
+`;case`Downloads`:return S`
+`;case`EmailLogin`:return S`
+`;case`EmailVerifyOtp`:return S`
+`;case`EmailVerifyDevice`:return S`
+`;case`GetWallet`:return S`
+`;case`Networks`:return S`
+`;case`SwitchNetwork`:return S`
+`;case`ProfileWallets`:return S`
+`;case`Transactions`:return S`
+`;case`OnRampTokenSelect`:return S`
+`;case`OnRampFiatSelect`:return S`
+`;case`UpgradeEmailWallet`:return S`
+`;case`UpdateEmailWallet`:return S`
+`;case`UpdateEmailPrimaryOtp`:return S`
+`;case`UpdateEmailSecondaryOtp`:return S`
+`;case`UnsupportedChain`:return S`
+`;case`Swap`:return S`
+`;case`SwapSelectToken`:return S`
+`;case`SwapPreview`:return S`
+`;case`WalletSend`:return S`
+`;case`WalletSendSelectToken`:return S`
+`;case`WalletSendPreview`:return S`
+`;case`WalletSendConfirmed`:return S`
+`;case`WhatIsABuy`:return S`
+`;case`WalletReceive`:return S`
+`;case`WalletCompatibleNetworks`:return S`
+`;case`WhatIsAWallet`:return S`
+`;case`ConnectingMultiChain`:return S`
+`;case`WhatIsANetwork`:return S`
+`;case`ConnectingFarcaster`:return S`
+`;case`SwitchActiveChain`:return S`
+`;case`RegisterAccountName`:return S`
+`;case`RegisterAccountNameSuccess`:return S`
+`;case`SmartSessionCreated`:return S`
+`;case`SmartSessionList`:return S`
+`;case`SIWXSignMessage`:return S`
+`;case`Pay`:return S`
+`;case`PayLoading`:return S`
+`;case`FundWallet`:return S`
+`;case`PayWithExchange`:return S`
+`;case`PayWithExchangeSelectAsset`:return S`
+`;default:return S`
+`:this.open?S`
+r?s=`next`:i
+<path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm34.83-86.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66,0l-32-32a4,4,0,0,1,5.66-5.66L124,158.34V88a4,4,0,0,1,8,0v70.34l25.17-25.17A4,4,0,0,1,162.83,133.17Z"/>
+<path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm36.24-86.24a6,6,0,0,1,0,8.48l-32,32a6,6,0,0,1-8.48,0l-32-32a6,6,0,0,1,8.48-8.48L122,153.51V88a6,6,0,0,1,12,0v65.51l21.76-21.75A6,6,0,0,1,164.24,131.76Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm37.66-85.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32,0l-32-32a8,8,0,0,1,11.32-11.32L120,148.69V88a8,8,0,0,1,16,0v60.69l18.34-18.35A8,8,0,0,1,165.66,130.34Z"/>
+<path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40.49-84.49a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L116,139V88a12,12,0,0,1,24,0v51l11.51-11.52A12,12,0,0,1,168.49,127.51Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm37.66,117.66-32,32a8,8,0,0,1-11.32,0l-32-32a8,8,0,0,1,11.32-11.32L120,148.69V88a8,8,0,0,1,16,0v60.69l18.34-18.35a8,8,0,0,1,11.32,11.32Z"/>
+`],[`light`,e`
+`],[`regular`,e`
+`],[`bold`,e`
+`],[`fill`,e`
+`],[`duotone`,e`
+A(e)||typeof e?.[Symbol.iterator]==`function`,j=`[ \f\r]`,M=/
+`:``,o=M;for(let t=0;t
+<path d="M236,56v48a4,4,0,0,1-4,4H184a4,4,0,0,1,0-8h37.7L187.53,68.69l-.13-.12a84,84,0,1,0-1.75,120.51,4,4,0,0,1,5.5,5.82A91.43,91.43,0,0,1,128,220h-1.26A92,92,0,1,1,193,62.84l35,32.05V56a4,4,0,1,1,8,0Z"/>
+<path d="M238,56v48a6,6,0,0,1-6,6H184a6,6,0,0,1,0-12h32.55l-30.38-27.8c-.06-.06-.12-.13-.19-.19a82,82,0,1,0-1.7,117.65,6,6,0,0,1,8.24,8.73A93.46,93.46,0,0,1,128,222h-1.28A94,94,0,1,1,194.37,61.4L226,90.35V56a6,6,0,1,1,12,0Z"/>
+<path d="M240,56v48a8,8,0,0,1-8,8H184a8,8,0,0,1,0-16H211.4L184.81,71.64l-.25-.24a80,80,0,1,0-1.67,114.78,8,8,0,0,1,11,11.63A95.44,95.44,0,0,1,128,224h-1.32A96,96,0,1,1,195.75,60L224,85.8V56a8,8,0,1,1,16,0Z"/>
+<path d="M244,56v48a12,12,0,0,1-12,12H184a12,12,0,1,1,0-24H201.1l-19-17.38c-.13-.12-.26-.24-.38-.37A76,76,0,1,0,127,204h1a75.53,75.53,0,0,0,52.15-20.72,12,12,0,0,1,16.49,17.45A99.45,99.45,0,0,1,128,228h-1.37A100,100,0,1,1,198.51,57.06L220,76.72V56a12,12,0,0,1,24,0Z"/>
+<path d="M240,56v48a8,8,0,0,1-8,8H184a8,8,0,0,1-5.66-13.66l17-17-10.55-9.65-.25-.24a80,80,0,1,0-1.67,114.78,8,8,0,1,1,11,11.63A95.44,95.44,0,0,1,128,224h-1.32A96,96,0,1,1,195.75,60l10.93,10L226.34,50.3A8,8,0,0,1,240,56Z"/>
+<path d="M216,128a88,88,0,1,1-88-88A88,88,0,0,1,216,128Z" opacity="0.2"/><path d="M240,56v48a8,8,0,0,1-8,8H184a8,8,0,0,1,0-16H211.4L184.81,71.64l-.25-.24a80,80,0,1,0-1.67,114.78,8,8,0,0,1,11,11.63A95.44,95.44,0,0,1,128,224h-1.32A96,96,0,1,1,195.75,60L224,85.8V56a8,8,0,1,1,16,0Z"/>
+<path d="M202.83,146.83l-72,72a4,4,0,0,1-5.66,0l-72-72a4,4,0,0,1,5.66-5.66L124,206.34V40a4,4,0,0,1,8,0V206.34l65.17-65.17a4,4,0,0,1,5.66,5.66Z"/>
+<path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"/>
+<path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"/>
+<path d="M208.49,152.49l-72,72a12,12,0,0,1-17,0l-72-72a12,12,0,0,1,17-17L116,187V40a12,12,0,0,1,24,0V187l51.51-51.52a12,12,0,0,1,17,17Z"/>
+<path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72A8,8,0,0,1,56,136h64V40a8,8,0,0,1,16,0v96h64a8,8,0,0,1,5.66,13.66Z"/>
+<path d="M200,144l-72,72L56,144Z" opacity="0.2"/><path d="M207.39,140.94A8,8,0,0,0,200,136H136V40a8,8,0,0,0-16,0v96H56a8,8,0,0,0-5.66,13.66l72,72a8,8,0,0,0,11.32,0l72-72A8,8,0,0,0,207.39,140.94ZM128,204.69,75.31,152H180.69Z"/>
+<path d="M220,128a4,4,0,0,1-4,4H49.66l65.17,65.17a4,4,0,0,1-5.66,5.66l-72-72a4,4,0,0,1,0-5.66l72-72a4,4,0,0,1,5.66,5.66L49.66,124H216A4,4,0,0,1,220,128Z"/>
+<path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/>
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"/>
+<path d="M228,128a12,12,0,0,1-12,12H69l51.52,51.51a12,12,0,0,1-17,17l-72-72a12,12,0,0,1,0-17l72-72a12,12,0,0,1,17,17L69,116H216A12,12,0,0,1,228,128Z"/>
+<path d="M224,128a8,8,0,0,1-8,8H120v64a8,8,0,0,1-13.66,5.66l-72-72a8,8,0,0,1,0-11.32l72-72A8,8,0,0,1,120,56v64h96A8,8,0,0,1,224,128Z"/>
+<path d="M112,56V200L40,128Z" opacity="0.2"/><path d="M216,120H120V56a8,8,0,0,0-13.66-5.66l-72,72a8,8,0,0,0,0,11.32l72,72A8,8,0,0,0,120,200V136h96a8,8,0,0,0,0-16ZM104,180.69,51.31,128,104,75.31Z"/>
+<path d="M218.83,130.83l-72,72a4,4,0,0,1-5.66-5.66L206.34,132H40a4,4,0,0,1,0-8H206.34L141.17,58.83a4,4,0,0,1,5.66-5.66l72,72A4,4,0,0,1,218.83,130.83Z"/>
+<path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/>
+<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/>
+<path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"/>
+<path d="M221.66,133.66l-72,72A8,8,0,0,1,136,200V136H40a8,8,0,0,1,0-16h96V56a8,8,0,0,1,13.66-5.66l72,72A8,8,0,0,1,221.66,133.66Z"/>
+<path d="M216,128l-72,72V56Z" opacity="0.2"/><path d="M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"/>
+<path d="M220,104a4,4,0,0,1-8,0V49.66l-73.16,73.17a4,4,0,0,1-5.66-5.66L206.34,44H152a4,4,0,0,1,0-8h64a4,4,0,0,1,4,4Zm-36,28a4,4,0,0,0-4,4v72a4,4,0,0,1-4,4H48a4,4,0,0,1-4-4V80a4,4,0,0,1,4-4h72a4,4,0,0,0,0-8H48A12,12,0,0,0,36,80V208a12,12,0,0,0,12,12H176a12,12,0,0,0,12-12V136A4,4,0,0,0,184,132Z"/>
+<path d="M222,104a6,6,0,0,1-12,0V54.49l-69.75,69.75a6,6,0,0,1-8.48-8.48L201.51,46H152a6,6,0,0,1,0-12h64a6,6,0,0,1,6,6Zm-38,26a6,6,0,0,0-6,6v72a2,2,0,0,1-2,2H48a2,2,0,0,1-2-2V80a2,2,0,0,1,2-2h72a6,6,0,0,0,0-12H48A14,14,0,0,0,34,80V208a14,14,0,0,0,14,14H176a14,14,0,0,0,14-14V136A6,6,0,0,0,184,130Z"/>
+<path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/>
+<path d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"/>
+<path d="M192,136v72a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V80A16,16,0,0,1,48,64h72a8,8,0,0,1,0,16H48V208H176V136a8,8,0,0,1,16,0Zm32-96a8,8,0,0,0-8-8H152a8,8,0,0,0-5.66,13.66L172.69,72l-42.35,42.34a8,8,0,0,0,11.32,11.32L184,83.31l26.34,26.35A8,8,0,0,0,224,104Z"/>
+<path d="M114.83,173.17a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66,0l-32-32a4,4,0,0,1,5.66-5.66L76,198.34V48a4,4,0,0,1,8,0V198.34l25.17-25.17A4,4,0,0,1,114.83,173.17Zm96-96-32-32a4,4,0,0,0-5.66,0l-32,32a4,4,0,0,0,5.66,5.66L172,57.66V208a4,4,0,0,0,8,0V57.66l25.17,25.17a4,4,0,1,0,5.66-5.66Z"/>
+<path d="M116.24,171.76a6,6,0,0,1,0,8.48l-32,32a6,6,0,0,1-8.48,0l-32-32a6,6,0,0,1,8.48-8.48L74,193.51V48a6,6,0,0,1,12,0V193.51l21.76-21.75A6,6,0,0,1,116.24,171.76Zm96-96-32-32a6,6,0,0,0-8.48,0l-32,32a6,6,0,0,0,8.48,8.48L170,62.49V208a6,6,0,0,0,12,0V62.49l21.76,21.75a6,6,0,0,0,8.48-8.48Z"/>
+<path d="M117.66,170.34a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32,0l-32-32a8,8,0,0,1,11.32-11.32L72,188.69V48a8,8,0,0,1,16,0V188.69l18.34-18.35A8,8,0,0,1,117.66,170.34Zm96-96-32-32a8,8,0,0,0-11.32,0l-32,32a8,8,0,0,0,11.32,11.32L168,67.31V208a8,8,0,0,0,16,0V67.31l18.34,18.35a8,8,0,0,0,11.32-11.32Z"/>
+<path d="M120.49,167.51a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L68,179V48a12,12,0,0,1,24,0V179l11.51-11.52A12,12,0,0,1,120.49,167.51Zm96-96-32-32a12,12,0,0,0-17,0l-32,32a12,12,0,0,0,17,17L164,77V208a12,12,0,0,0,24,0V77l11.51,11.52a12,12,0,0,0,17-17Z"/>
+<path d="M119.39,172.94a8,8,0,0,1-1.73,8.72l-32,32a8,8,0,0,1-11.32,0l-32-32A8,8,0,0,1,48,168H72V48a8,8,0,0,1,16,0V168h24A8,8,0,0,1,119.39,172.94Zm94.27-98.6-32-32a8,8,0,0,0-11.32,0l-32,32A8,8,0,0,0,144,88h24V208a8,8,0,0,0,16,0V88h24a8,8,0,0,0,5.66-13.66Z"/>
+<path d="M210.83,173.17a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L198.34,180H48a4,4,0,0,1,0-8H198.34l-25.17-25.17a4,4,0,0,1,5.66-5.66ZM77.17,114.83a4,4,0,0,0,5.66-5.66L57.66,84H208a4,4,0,0,0,0-8H57.66L82.83,50.83a4,4,0,0,0-5.66-5.66l-32,32a4,4,0,0,0,0,5.66Z"/>
+<path d="M212.24,171.76a6,6,0,0,1,0,8.48l-32,32a6,6,0,0,1-8.48-8.48L193.51,182H48a6,6,0,0,1,0-12H193.51l-21.75-21.76a6,6,0,0,1,8.48-8.48ZM75.76,116.24a6,6,0,0,0,8.48-8.48L62.49,86H208a6,6,0,0,0,0-12H62.49L84.24,52.24a6,6,0,0,0-8.48-8.48l-32,32a6,6,0,0,0,0,8.48Z"/>
+<path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"/>
+<path d="M216.49,184.49l-32,32a12,12,0,0,1-17-17L179,188H48a12,12,0,0,1,0-24H179l-11.52-11.51a12,12,0,0,1,17-17l32,32A12,12,0,0,1,216.49,184.49Zm-145-64a12,12,0,0,0,17-17L77,92H208a12,12,0,0,0,0-24H77L88.49,56.49a12,12,0,0,0-17-17l-32,32a12,12,0,0,0,0,17Z"/>
+<path d="M42.34,85.66a8,8,0,0,1,0-11.32l32-32A8,8,0,0,1,88,48V72H208a8,8,0,0,1,0,16H88v24a8,8,0,0,1-13.66,5.66Zm171.32,84.68-32-32A8,8,0,0,0,168,144v24H48a8,8,0,0,0,0,16H168v24a8,8,0,0,0,13.66,5.66l32-32A8,8,0,0,0,213.66,170.34Z"/>
+<path d="M202.83,114.83a4,4,0,0,1-5.66,0L132,49.66V216a4,4,0,0,1-8,0V49.66L58.83,114.83a4,4,0,0,1-5.66-5.66l72-72a4,4,0,0,1,5.66,0l72,72A4,4,0,0,1,202.83,114.83Z"/>
+<path d="M204.24,116.24a6,6,0,0,1-8.48,0L134,54.49V216a6,6,0,0,1-12,0V54.49L60.24,116.24a6,6,0,0,1-8.48-8.48l72-72a6,6,0,0,1,8.48,0l72,72A6,6,0,0,1,204.24,116.24Z"/>
+<path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"/>
+<path d="M208.49,120.49a12,12,0,0,1-17,0L140,69V216a12,12,0,0,1-24,0V69L64.49,120.49a12,12,0,0,1-17-17l72-72a12,12,0,0,1,17,0l72,72A12,12,0,0,1,208.49,120.49Z"/>
+<path d="M207.39,115.06A8,8,0,0,1,200,120H136v96a8,8,0,0,1-16,0V120H56a8,8,0,0,1-5.66-13.66l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,207.39,115.06Z"/>
+<path d="M200,112H56l72-72Z" opacity="0.2"/><path d="M205.66,106.34l-72-72a8,8,0,0,0-11.32,0l-72,72A8,8,0,0,0,56,120h64v96a8,8,0,0,0,16,0V120h64a8,8,0,0,0,5.66-13.66ZM75.31,104,128,51.31,180.69,104Z"/>
+<path d="M196,64V168a4,4,0,0,1-8,0V73.66L66.83,194.83a4,4,0,0,1-5.66-5.66L182.34,68H88a4,4,0,0,1,0-8H192A4,4,0,0,1,196,64Z"/>
+<path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/>
+<path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/>
+<path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/>
+<path d="M200,64V168a8,8,0,0,1-13.66,5.66L140,127.31,69.66,197.66a8,8,0,0,1-11.32-11.32L128.69,116,82.34,69.66A8,8,0,0,1,88,56H192A8,8,0,0,1,200,64Z"/>
+<path d="M192,64V168L88,64Z" opacity="0.2"/><path d="M192,56H88a8,8,0,0,0-5.66,13.66L128.69,116,58.34,186.34a8,8,0,0,0,11.32,11.32L140,127.31l46.34,46.35A8,8,0,0,0,200,168V64A8,8,0,0,0,192,56Zm-8,92.69-38.34-38.34h0L107.31,72H184Z"/>
+<path d="M24,100H52v72H32a4,4,0,0,0,0,8H224a4,4,0,0,0,0-8H204V100h28a4,4,0,0,0,2.1-7.41l-104-64a4,4,0,0,0-4.2,0l-104,64A4,4,0,0,0,24,100Zm36,0h40v72H60Zm88,0v72H108V100Zm48,72H156V100h40ZM128,36.7,217.87,92H38.13ZM244,208a4,4,0,0,1-4,4H16a4,4,0,0,1,0-8H240A4,4,0,0,1,244,208Z"/>
+<path d="M24,102H50v68H32a6,6,0,0,0,0,12H224a6,6,0,0,0,0-12H206V102h26a6,6,0,0,0,3.14-11.11l-104-64a6,6,0,0,0-6.28,0l-104,64A6,6,0,0,0,24,102Zm38,0H98v68H62Zm84,0v68H110V102Zm48,68H158V102h36ZM128,39l82.8,51H45.2ZM246,208a6,6,0,0,1-6,6H16a6,6,0,0,1,0-12H240A6,6,0,0,1,246,208Z"/>
+<path d="M24,104H48v64H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16H208V104h24a8,8,0,0,0,4.19-14.81l-104-64a8,8,0,0,0-8.38,0l-104,64A8,8,0,0,0,24,104Zm40,0H96v64H64Zm80,0v64H112V104Zm48,64H160V104h32ZM128,41.39,203.74,88H52.26ZM248,208a8,8,0,0,1-8,8H16a8,8,0,0,1,0-16H240A8,8,0,0,1,248,208Z"/>
+<path d="M216,44H40A12,12,0,0,0,28,56V200a12,12,0,0,0,12,12H216a12,12,0,0,0,12-12V56A12,12,0,0,0,216,44ZM40,52H216a4,4,0,0,1,4,4V92H36V56A4,4,0,0,1,40,52ZM216,204H40a4,4,0,0,1-4-4V100H220V200A4,4,0,0,1,216,204Z"/>
+<path d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42ZM40,54H216a2,2,0,0,1,2,2V90H38V56A2,2,0,0,1,40,54ZM216,202H40a2,2,0,0,1-2-2V102H218v98A2,2,0,0,1,216,202Z"/>
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V88H40V56Zm0,144H40V104H216v96Z"/>
+<path d="M216,36H40A20,20,0,0,0,20,56V200a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A20,20,0,0,0,216,36Zm-4,24V84H44V60ZM44,196V108H212v88Z"/>
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V88H40V56Z"/>
+<path d="M224,56V96H32V56a8,8,0,0,1,8-8H216A8,8,0,0,1,224,56Z" opacity="0.2"/><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V88H40V56Zm0,144H40V104H216v96Z"/>
+<path d="M210.83,98.83l-80,80a4,4,0,0,1-5.66,0l-80-80a4,4,0,0,1,5.66-5.66L128,170.34l77.17-77.17a4,4,0,1,1,5.66,5.66Z"/>
+<path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"/>
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/>
+<path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"/>
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,48,88H208a8,8,0,0,1,5.66,13.66Z"/>
+<path d="M208,96l-80,80L48,96Z" opacity="0.2"/><path d="M215.39,92.94A8,8,0,0,0,208,88H48a8,8,0,0,0-5.66,13.66l80,80a8,8,0,0,0,11.32,0l80-80A8,8,0,0,0,215.39,92.94ZM128,164.69,67.31,104H188.69Z"/>
+<path d="M162.83,205.17a4,4,0,0,1-5.66,5.66l-80-80a4,4,0,0,1,0-5.66l80-80a4,4,0,1,1,5.66,5.66L85.66,128Z"/>
+<path d="M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z"/>
+<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"/>
+<path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"/>
+<path d="M168,48V208a8,8,0,0,1-13.66,5.66l-80-80a8,8,0,0,1,0-11.32l80-80A8,8,0,0,1,168,48Z"/>
+<path d="M160,48V208L80,128Z" opacity="0.2"/><path d="M163.06,40.61a8,8,0,0,0-8.72,1.73l-80,80a8,8,0,0,0,0,11.32l80,80A8,8,0,0,0,168,208V48A8,8,0,0,0,163.06,40.61ZM152,188.69,91.31,128,152,67.31Z"/>
+<path d="M178.83,130.83l-80,80a4,4,0,0,1-5.66-5.66L170.34,128,93.17,50.83a4,4,0,0,1,5.66-5.66l80,80A4,4,0,0,1,178.83,130.83Z"/>
+<path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/>
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/>
+<path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"/>
+<path d="M181.66,133.66l-80,80A8,8,0,0,1,88,208V48a8,8,0,0,1,13.66-5.66l80,80A8,8,0,0,1,181.66,133.66Z"/>
+<path d="M176,128,96,208V48Z" opacity="0.2"/><path d="M181.66,122.34l-80-80A8,8,0,0,0,88,48V208a8,8,0,0,0,13.66,5.66l80-80A8,8,0,0,0,181.66,122.34ZM104,188.69V67.31L164.69,128Z"/>
+<path d="M210.83,162.83a4,4,0,0,1-5.66,0L128,85.66,50.83,162.83a4,4,0,0,1-5.66-5.66l80-80a4,4,0,0,1,5.66,0l80,80A4,4,0,0,1,210.83,162.83Z"/>
+<path d="M212.24,164.24a6,6,0,0,1-8.48,0L128,88.49,52.24,164.24a6,6,0,0,1-8.48-8.48l80-80a6,6,0,0,1,8.48,0l80,80A6,6,0,0,1,212.24,164.24Z"/>
+<path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"/>
+<path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"/>
+<path d="M215.39,163.06A8,8,0,0,1,208,168H48a8,8,0,0,1-5.66-13.66l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,215.39,163.06Z"/>
+<path d="M208,160H48l80-80Z" opacity="0.2"/><path d="M213.66,154.34l-80-80a8,8,0,0,0-11.32,0l-80,80A8,8,0,0,0,48,168H208a8,8,0,0,0,5.66-13.66ZM67.31,152,128,91.31,188.69,152Z"/>
+<path d="M226.83,74.83l-128,128a4,4,0,0,1-5.66,0l-56-56a4,4,0,0,1,5.66-5.66L96,194.34,221.17,69.17a4,4,0,1,1,5.66,5.66Z"/>
+<path d="M228.24,76.24l-128,128a6,6,0,0,1-8.48,0l-56-56a6,6,0,0,1,8.48-8.48L96,191.51,219.76,67.76a6,6,0,0,1,8.48,8.48Z"/>
+<path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/>
+<path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"/>
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM205.66,85.66l-96,96a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L104,164.69l90.34-90.35a8,8,0,0,1,11.32,11.32Z"/>
+<path d="M232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Z" opacity="0.2"/><path d="M205.66,85.66l-96,96a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L104,164.69l90.34-90.35a8,8,0,0,1,11.32,11.32Z"/>
+<path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm12,24.87a83.53,83.53,0,0,1,24,7.25V203.88a83.53,83.53,0,0,1-24,7.25ZM44,128a84.12,84.12,0,0,1,72-83.13V211.13A84.12,84.12,0,0,1,44,128Zm144,58.71V69.29a83.81,83.81,0,0,1,0,117.42Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM40,128a88.1,88.1,0,0,1,88-88V216A88.1,88.1,0,0,1,40,128Z"/>
+<path d="M224,128a96,96,0,0,1-96,96V32A96,96,0,0,1,224,128Z" opacity="0.2"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM40,128a88.11,88.11,0,0,1,80-87.63V215.63A88.11,88.11,0,0,1,40,128Zm96,87.63V40.37a88,88,0,0,1,0,175.26Z"/>
+<path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm60-92a4,4,0,0,1-4,4H128a4,4,0,0,1-4-4V72a4,4,0,0,1,8,0v52h52A4,4,0,0,1,188,128Z"/>
+<path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm62-90a6,6,0,0,1-6,6H128a6,6,0,0,1-6-6V72a6,6,0,0,1,12,0v50h50A6,6,0,0,1,190,128Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/>
+<path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm68-84a12,12,0,0,1-12,12H128a12,12,0,0,1-12-12V72a12,12,0,0,1,24,0v44h44A12,12,0,0,1,196,128Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm56,112H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48a8,8,0,0,1,0,16Z"/>
+<path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" opacity="0.2"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/>
+<path d="M216,36H88a4,4,0,0,0-4,4V84H40a4,4,0,0,0-4,4V216a4,4,0,0,0,4,4H168a4,4,0,0,0,4-4V172h44a4,4,0,0,0,4-4V40A4,4,0,0,0,216,36ZM164,212H44V92H164Zm48-48H172V88a4,4,0,0,0-4-4H92V44H212Z"/>
+<path d="M216,34H88a6,6,0,0,0-6,6V82H40a6,6,0,0,0-6,6V216a6,6,0,0,0,6,6H168a6,6,0,0,0,6-6V174h42a6,6,0,0,0,6-6V40A6,6,0,0,0,216,34ZM162,210H46V94H162Zm48-48H174V88a6,6,0,0,0-6-6H94V46H210Z"/>
+<path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/>
+<path d="M216,28H88A12,12,0,0,0,76,40V76H40A12,12,0,0,0,28,88V216a12,12,0,0,0,12,12H168a12,12,0,0,0,12-12V180h36a12,12,0,0,0,12-12V40A12,12,0,0,0,216,28ZM156,204H52V100H156Zm48-48H180V88a12,12,0,0,0-12-12H100V52H204Z"/>
+<path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32Zm-8,128H176V88a8,8,0,0,0-8-8H96V48H208Z"/>
+<path d="M216,40V168H168V88H88V40Z" opacity="0.2"/><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/>
+<path d="M208,44H48A20,20,0,0,0,28,64V176a20,20,0,0,0,20,20h76v24H96a4,4,0,0,0,0,8h64a4,4,0,0,0,0-8H132V196h76a20,20,0,0,0,20-20V64A20,20,0,0,0,208,44ZM48,52H208a12,12,0,0,1,12,12v84H36V64A12,12,0,0,1,48,52ZM208,188H48a12,12,0,0,1-12-12V156H220v20A12,12,0,0,1,208,188Z"/>
+<path d="M208,42H48A22,22,0,0,0,26,64V176a22,22,0,0,0,22,22h74v20H96a6,6,0,0,0,0,12h64a6,6,0,0,0,0-12H134V198h74a22,22,0,0,0,22-22V64A22,22,0,0,0,208,42ZM48,54H208a10,10,0,0,1,10,10v82H38V64A10,10,0,0,1,48,54ZM208,186H48a10,10,0,0,1-10-10V158H218v18A10,10,0,0,1,208,186Z"/>
+<path d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24h72v16H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V200h72a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40ZM48,56H208a8,8,0,0,1,8,8v80H40V64A8,8,0,0,1,48,56ZM208,184H48a8,8,0,0,1-8-8V160H216v16A8,8,0,0,1,208,184Z"/>
+<path d="M208,36H48A28,28,0,0,0,20,64V172a28,28,0,0,0,28,28h68v12H96a12,12,0,0,0,0,24h64a12,12,0,0,0,0-24H140V200h68a28,28,0,0,0,28-28V64A28,28,0,0,0,208,36ZM48,60H208a4,4,0,0,1,4,4v72H44V64A4,4,0,0,1,48,60ZM208,176H48a4,4,0,0,1-4-4V160H212v12A4,4,0,0,1,208,176Z"/>
+<path d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24h72v16H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V200h72a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm0,144H48a8,8,0,0,1-8-8V160H216v16A8,8,0,0,1,208,184Z"/>
+<path d="M176,20H80A20,20,0,0,0,60,40V216a20,20,0,0,0,20,20h96a20,20,0,0,0,20-20V40A20,20,0,0,0,176,20ZM68,60H188V196H68ZM80,28h96a12,12,0,0,1,12,12V52H68V40A12,12,0,0,1,80,28Zm96,200H80a12,12,0,0,1-12-12V204H188v12A12,12,0,0,1,176,228Z"/>
+<path d="M176,18H80A22,22,0,0,0,58,40V216a22,22,0,0,0,22,22h96a22,22,0,0,0,22-22V40A22,22,0,0,0,176,18ZM70,62H186V194H70ZM80,30h96a10,10,0,0,1,10,10V50H70V40A10,10,0,0,1,80,30Zm96,196H80a10,10,0,0,1-10-10V206H186v10A10,10,0,0,1,176,226Z"/>
+<path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM72,64H184V192H72Zm8-32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"/>
+<path d="M176,12H80A28,28,0,0,0,52,40V216a28,28,0,0,0,28,28h96a28,28,0,0,0,28-28V40A28,28,0,0,0,176,12ZM76,76H180V180H76Zm4-40h96a4,4,0,0,1,4,4V52H76V40A4,4,0,0,1,80,36Zm96,184H80a4,4,0,0,1-4-4V204H180v12A4,4,0,0,1,176,220Z"/>
+<path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM80,32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"/>
+<path d="M192,56V200H64V56Z" opacity="0.2"/><path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM72,64H184V192H72Zm8-32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"/>
+<path d="M136,128a8,8,0,1,1-8-8A8,8,0,0,1,136,128Zm-76-8a8,8,0,1,0,8,8A8,8,0,0,0,60,120Zm136,0a8,8,0,1,0,8,8A8,8,0,0,0,196,120Z"/>
+<path d="M138,128a10,10,0,1,1-10-10A10,10,0,0,1,138,128ZM60,118a10,10,0,1,0,10,10A10,10,0,0,0,60,118Zm136,0a10,10,0,1,0,10,10A10,10,0,0,0,196,118Z"/>
+<path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Zm56-12a12,12,0,1,0,12,12A12,12,0,0,0,196,116ZM60,116a12,12,0,1,0,12,12A12,12,0,0,0,60,116Z"/>
+<path d="M144,128a16,16,0,1,1-16-16A16,16,0,0,1,144,128ZM60,112a16,16,0,1,0,16,16A16,16,0,0,0,60,112Zm136,0a16,16,0,1,0,16,16A16,16,0,0,0,196,112Z"/>
+<path d="M224,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V96A16,16,0,0,0,224,80ZM60,140a12,12,0,1,1,12-12A12,12,0,0,1,60,140Zm68,0a12,12,0,1,1,12-12A12,12,0,0,1,128,140Zm68,0a12,12,0,1,1,12-12A12,12,0,0,1,196,140Z"/>
+<path d="M240,96v64a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V96A16,16,0,0,1,32,80H224A16,16,0,0,1,240,96Z" opacity="0.2"/><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Zm56-12a12,12,0,1,0,12,12A12,12,0,0,0,196,116ZM60,116a12,12,0,1,0,12,12A12,12,0,0,0,60,116Z"/>
+<path d="M224,52H32a4,4,0,0,0-4,4V192a12,12,0,0,0,12,12H216a12,12,0,0,0,12-12V56A4,4,0,0,0,224,52Zm-96,86.57L42.28,60H213.72ZM104.63,128,36,190.91V65.09Zm5.92,5.43L125.3,147a4,4,0,0,0,5.4,0l14.75-13.52L213.72,196H42.28ZM151.37,128,220,65.09V190.91Z"/>
+<path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50Zm-96,85.86L47.42,62H208.58ZM101.67,128,38,186.36V69.64Zm8.88,8.14L124,148.42a6,6,0,0,0,8.1,0l13.4-12.28L208.58,194H47.43ZM154.33,128,218,69.64V186.36Z"/>
+<path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"/>
+<path d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44Zm-96,83.72L62.85,68h130.3ZM92.79,128,44,172.72V83.28Zm17.76,16.28,9.34,8.57a12,12,0,0,0,16.22,0l9.34-8.57L193.15,188H62.85ZM163.21,128,212,83.28v89.44Z"/>
+<path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"/>
+<path d="M224,56l-96,88L32,56Z" opacity="0.2"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"/>
+<path d="M196,136a4,4,0,0,1-4,4H64a4,4,0,0,1,0-8H192A4,4,0,0,1,196,136Zm36-52H24a4,4,0,0,0,0,8H232a4,4,0,0,0,0-8Zm-80,96H104a4,4,0,0,0,0,8h48a4,4,0,0,0,0-8Z"/>
+<path d="M198,136a6,6,0,0,1-6,6H64a6,6,0,0,1,0-12H192A6,6,0,0,1,198,136Zm34-54H24a6,6,0,0,0,0,12H232a6,6,0,0,0,0-12Zm-80,96H104a6,6,0,0,0,0,12h48a6,6,0,0,0,0-12Z"/>
+<path d="M200,136a8,8,0,0,1-8,8H64a8,8,0,0,1,0-16H192A8,8,0,0,1,200,136Zm32-56H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16Zm-80,96H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Z"/>
+<path d="M204,136a12,12,0,0,1-12,12H64a12,12,0,0,1,0-24H192A12,12,0,0,1,204,136Zm28-60H24a12,12,0,0,0,0,24H232a12,12,0,0,0,0-24Zm-80,96H104a12,12,0,0,0,0,24h48a12,12,0,0,0,0-24Z"/>
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM144,176H112a8,8,0,0,1,0-16h32a8,8,0,0,1,0,16Zm32-40H80a8,8,0,0,1,0-16h96a8,8,0,0,1,0,16Zm32-40H48a8,8,0,0,1,0-16H208a8,8,0,0,1,0,16Z"/>
+<path d="M232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Z" opacity="0.2"/><path d="M200,136a8,8,0,0,1-8,8H64a8,8,0,0,1,0-16H192A8,8,0,0,1,200,136Zm32-56H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16Zm-80,96H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Z"/>
+<path d="M140,176a4,4,0,0,1-4,4,12,12,0,0,1-12-12V128a4,4,0,0,0-4-4,4,4,0,0,1,0-8,12,12,0,0,1,12,12v40a4,4,0,0,0,4,4A4,4,0,0,1,140,176ZM124,92a8,8,0,1,0-8-8A8,8,0,0,0,124,92Zm104,36A100,100,0,1,1,128,28,100.11,100.11,0,0,1,228,128Zm-8,0a92,92,0,1,0-92,92A92.1,92.1,0,0,0,220,128Z"/>
+<path d="M142,176a6,6,0,0,1-6,6,14,14,0,0,1-14-14V128a2,2,0,0,0-2-2,6,6,0,0,1,0-12,14,14,0,0,1,14,14v40a2,2,0,0,0,2,2A6,6,0,0,1,142,176ZM124,94a10,10,0,1,0-10-10A10,10,0,0,0,124,94Zm106,34A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"/>
+<path d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-4,48a12,12,0,1,1-12,12A12,12,0,0,1,124,72Zm12,112a16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40a8,8,0,0,1,0,16Z"/>
+<path d="M226.83,221.17l-52.7-52.7a84.1,84.1,0,1,0-5.66,5.66l52.7,52.7a4,4,0,0,0,5.66-5.66ZM36,112a76,76,0,1,1,76,76A76.08,76.08,0,0,1,36,112Z"/>
+<path d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z"/>
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/>
+<path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"/>
+<path d="M168,112a56,56,0,1,1-56-56A56,56,0,0,1,168,112Zm61.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88,88,0,1,1,11.32-11.31l50.06,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"/>
+<path d="M192,112a80,80,0,1,1-80-80A80,80,0,0,1,192,112Z" opacity="0.2"/><path d="M229.66,218.34,179.6,168.28a88.21,88.21,0,1,0-11.32,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/>
+<path d="M220,128a4,4,0,0,1-4,4H132v84a4,4,0,0,1-8,0V132H40a4,4,0,0,1,0-8h84V40a4,4,0,0,1,8,0v84h84A4,4,0,0,1,220,128Z"/>
+<path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/>
+<path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/>
+<path d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z"/>
+<path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM184,136H136v48a8,8,0,0,1-16,0V136H72a8,8,0,0,1,0-16h48V72a8,8,0,0,1,16,0v48h48a8,8,0,0,1,0,16Z"/>
+<path d="M216,56V200a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V56A16,16,0,0,1,56,40H200A16,16,0,0,1,216,56Z" opacity="0.2"/><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/>
+<path d="M124,128V48a4,4,0,0,1,8,0v80a4,4,0,0,1-8,0Zm54.18-75.35a4,4,0,1,0-4.36,6.7C198.08,75.17,212,100.2,212,128a84,84,0,0,1-168,0c0-27.8,13.92-52.83,38.18-68.65a4,4,0,0,0-4.36-6.7C51.24,70,36,97.44,36,128a92,92,0,0,0,184,0C220,97.44,204.76,70,178.18,52.65Z"/>
+<path d="M122,128V48a6,6,0,0,1,12,0v80a6,6,0,0,1-12,0Zm57.28-77A6,6,0,0,0,172.72,61C196.41,76.47,210,100.88,210,128a82,82,0,0,1-164,0c0-27.12,13.59-51.53,37.28-67A6,6,0,0,0,76.72,51C49.57,68.68,34,96.75,34,128a94,94,0,0,0,188,0C222,96.75,206.43,68.68,179.28,51Z"/>
+<path d="M120,128V48a8,8,0,0,1,16,0v80a8,8,0,0,1-16,0Zm60.37-78.7a8,8,0,0,0-8.74,13.4C194.74,77.77,208,101.57,208,128a80,80,0,0,1-160,0c0-26.43,13.26-50.23,36.37-65.3a8,8,0,0,0-8.74-13.4C47.9,67.38,32,96.06,32,128a96,96,0,0,0,192,0C224,96.06,208.1,67.38,180.37,49.3Z"/>
+<path d="M116,128V48a12,12,0,0,1,24,0v80a12,12,0,0,1-24,0Zm66.55-82a12,12,0,0,0-13.1,20.1C191.41,80.37,204,103,204,128a76,76,0,0,1-152,0c0-25,12.59-47.63,34.55-61.95A12,12,0,0,0,73.45,46C44.56,64.78,28,94.69,28,128a100,100,0,0,0,200,0C228,94.69,211.44,64.78,182.55,46Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104,104,0,0,0,128,24Zm-8,40a8,8,0,0,1,16,0v64a8,8,0,0,1-16,0Zm8,144A80,80,0,0,1,83.55,61.48a8,8,0,1,1,8.9,13.29,64,64,0,1,0,71.1,0,8,8,0,1,1,8.9-13.29A80,80,0,0,1,128,208Z"/>
+<path d="M188,96c0,27.51-24.77,50.09-56,51.89V160a4,4,0,0,1-8,0V144a4,4,0,0,1,4-4c28.67,0,52-19.74,52-44s-23.33-44-52-44S76,71.74,76,96a4,4,0,0,1-8,0c0-28.67,26.92-52,60-52S188,67.33,188,96ZM128,196a12,12,0,1,0,12,12A12,12,0,0,0,128,196Z"/>
+<path d="M190,96c0,28-24.62,51.11-56,53.75V160a6,6,0,0,1-12,0V144a6,6,0,0,1,6-6c27.57,0,50-18.84,50-42s-22.43-42-50-42S78,72.84,78,96a6,6,0,0,1-12,0c0-29.78,27.81-54,62-54S190,66.22,190,96Zm-62,98a14,14,0,1,0,14,14A14,14,0,0,0,128,194Z"/>
+<path d="M192,96c0,28.51-24.47,52.11-56,55.56V160a8,8,0,0,1-16,0V144a8,8,0,0,1,8-8c26.47,0,48-17.94,48-40s-21.53-40-48-40S80,73.94,80,96a8,8,0,0,1-16,0c0-30.88,28.71-56,64-56S192,65.12,192,96Zm-64,96a16,16,0,1,0,16,16A16,16,0,0,0,128,192Z"/>
+<path d="M196,96c0,29.47-24.21,54.05-56,59.06V156a12,12,0,0,1-24,0V144a12,12,0,0,1,12-12c24.26,0,44-16.15,44-36s-19.74-36-44-36S84,76.15,84,96a12,12,0,0,1-24,0c0-33.08,30.5-60,68-60S196,62.92,196,96Zm-68,92a20,20,0,1,0,20,20A20,20,0,0,0,128,188Z"/>
+<path d="M116,216a4,4,0,0,1-4,4H48a4,4,0,0,1-4-4V40a4,4,0,0,1,4-4h64a4,4,0,0,1,0,8H52V212h60A4,4,0,0,1,116,216Zm110.83-90.83-40-40a4,4,0,0,0-5.66,5.66L214.34,124H112a4,4,0,0,0,0,8H214.34l-33.17,33.17a4,4,0,0,0,5.66,5.66l40-40A4,4,0,0,0,226.83,125.17Z"/>
+<path d="M118,216a6,6,0,0,1-6,6H48a6,6,0,0,1-6-6V40a6,6,0,0,1,6-6h64a6,6,0,0,1,0,12H54V210h58A6,6,0,0,1,118,216Zm110.24-92.24-40-40a6,6,0,0,0-8.48,8.48L209.51,122H112a6,6,0,0,0,0,12h97.51l-29.75,29.76a6,6,0,1,0,8.48,8.48l40-40A6,6,0,0,0,228.24,123.76Z"/>
+<path d="M120,216a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h64a8,8,0,0,1,0,16H56V208h56A8,8,0,0,1,120,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L204.69,120H112a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,229.66,122.34Z"/>
+<path d="M124,216a12,12,0,0,1-12,12H48a12,12,0,0,1-12-12V40A12,12,0,0,1,48,28h64a12,12,0,0,1,0,24H60V204h52A12,12,0,0,1,124,216Zm108.49-96.49-40-40a12,12,0,0,0-17,17L195,116H112a12,12,0,0,0,0,24h83l-19.52,19.51a12,12,0,0,0,17,17l40-40A12,12,0,0,0,232.49,119.51Z"/>
+<path d="M120,216a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h64a8,8,0,0,1,0,16H56V208h56A8,8,0,0,1,120,216Zm109.66-93.66-40-40A8,8,0,0,0,176,88v32H112a8,8,0,0,0,0,16h64v32a8,8,0,0,0,13.66,5.66l40-40A8,8,0,0,0,229.66,122.34Z"/>
+<path d="M227.46,214c-16.52-28.56-43-48.06-73.68-55.09a68,68,0,1,0-51.56,0c-30.64,7-57.16,26.53-73.68,55.09a4,4,0,0,0,6.92,4C55,184.19,89.62,164,128,164s73,20.19,92.54,54a4,4,0,0,0,3.46,2,3.93,3.93,0,0,0,2-.54A4,4,0,0,0,227.46,214ZM68,96a60,60,0,1,1,60,60A60.07,60.07,0,0,1,68,96Z"/>
+<path d="M229.19,213c-15.81-27.32-40.63-46.49-69.47-54.62a70,70,0,1,0-63.44,0C67.44,166.5,42.62,185.67,26.81,213a6,6,0,1,0,10.38,6C56.4,185.81,90.34,166,128,166s71.6,19.81,90.81,53a6,6,0,1,0,10.38-6ZM70,96a58,58,0,1,1,58,58A58.07,58.07,0,0,1,70,96Z"/>
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"/>
+<path d="M234.38,210a123.36,123.36,0,0,0-60.78-53.23,76,76,0,1,0-91.2,0A123.36,123.36,0,0,0,21.62,210a12,12,0,1,0,20.77,12c18.12-31.32,50.12-50,85.61-50s67.49,18.69,85.61,50a12,12,0,0,0,20.77-12ZM76,96a52,52,0,1,1,52,52A52.06,52.06,0,0,1,76,96Z"/>
+<path d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z"/>
+<path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm-4-84V80a4,4,0,0,1,8,0v56a4,4,0,0,1-8,0Zm12,36a8,8,0,1,1-8-8A8,8,0,0,1,136,172Z"/>
+<path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm-6-82V80a6,6,0,0,1,12,0v56a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,172Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm-8-80V80a8,8,0,0,1,16,0v56a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,172Z"/>
+<path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm-12-80V80a12,12,0,0,1,24,0v52a12,12,0,0,1-24,0Zm28,40a16,16,0,1,1-16-16A16,16,0,0,1,144,172Z"/>
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-8,56a8,8,0,0,1,16,0v56a8,8,0,0,1-16,0Zm8,104a12,12,0,1,1,12-12A12,12,0,0,1,128,184Z"/>
+<path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" opacity="0.2"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm-8-80V80a8,8,0,0,1,16,0v56a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,172Z"/>
+<path d="M202.83,197.17a4,4,0,0,1-5.66,5.66L128,133.66,58.83,202.83a4,4,0,0,1-5.66-5.66L122.34,128,53.17,58.83a4,4,0,0,1,5.66-5.66L128,122.34l69.17-69.17a4,4,0,1,1,5.66,5.66L133.66,128Z"/>
+<path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/>
+<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/>
+<path d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"/>
+<path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM181.66,170.34a8,8,0,0,1-11.32,11.32L128,139.31,85.66,181.66a8,8,0,0,1-11.32-11.32L116.69,128,74.34,85.66A8,8,0,0,1,85.66,74.34L128,116.69l42.34-42.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/>
+Maze Runner The Gardens
+Take the long way. Explore the overgrown stone gardens of Maze Runner.
+Welcome to the maze. Choose a character. Learn the controls. Then make your entrance. Choose your character. Practice as Alex. Sign in with X to collect drops and play. Enter Game. Entering the maze. Finding a way in. Controls. Local map. Active drop. Ghost preview. Your X identity. Your photo and linked handle appear above your character. Watch again. Sound off. Your next adventure. Your first run. Pick a runner, then learn the controls in a private practice garden. No account needed until you are ready.

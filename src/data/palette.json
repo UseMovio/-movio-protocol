@@ -1,0 +1,60 @@
+{
+  "palette": {
+    "lime": {
+      "role": "brand mark fill",
+      "hex": "#bff68c",
+      "source": "brand/LOGO MOVIO PNG.png",
+      "x": 716,
+      "y": 664,
+      "method": "k-means k=3, snapped"
+    },
+    "leaf": {
+      "role": "3D mark lit face",
+      "hex": "#89d042",
+      "source": "reference/MOVIO 1.jpg.jpeg",
+      "x": 1338,
+      "y": 666,
+      "method": "k-means k=8, snapped"
+    },
+    "forest": {
+      "role": "3D mark shaded face",
+      "hex": "#3a6f17",
+      "source": "reference/MOVIO 1.jpg.jpeg",
+      "x": 1452,
+      "y": 390,
+      "method": "k-means k=8, snapped"
+    },
+    "ink": {
+      "role": "page ground",
+      "hex": "#02160a",
+      "source": "reference/SAMPUL MOVIO JPG.jpg.jpeg",
+      "x": 0,
+      "y": 0,
+      "method": "k-means k=5, snapped"
+    },
+    "surface": {
+      "role": "panel ground",
+      "hex": "#16211b",
+      "source": "brand/LOGO MOVIO PNG.png",
+      "x": 0,
+      "y": 0,
+      "method": "k-means k=3, snapped"
+    },
+    "line": {
+      "role": "maze stroke",
+      "hex": "#142d18",
+      "source": "reference/SAMPUL MOVIO JPG.jpg.jpeg",
+      "x": 32,
+      "y": 0,
+      "method": "k-means k=5, snapped"
+    },
+    "text": {
+      "role": "body copy",
+      "hex": "#d4e0d6",
+      "source": "reference/MOVIO 1.jpg.jpeg",
+      "x": 258,
+      "y": 524,
+      "method": "k-means k=12, snapped"
+    }
+  }
+}

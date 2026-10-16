@@ -1,0 +1,76 @@
+/*
+  TOKENS: the only file in the project that may hold colour literals.
+
+  Palette provenance. Every value below was a k-means centroid (deterministic seed) of a real
+  asset, then snapped to the nearest real pixel of its own cluster. The coordinate is that pixel.
+  scripts/assets.mjs writes src/data/palette.json; gates re-read each pixel and compare.
+
+    --c-lime    brand mark fill     brand/LOGO MOVIO PNG.png            x=716  y=664   k=3
+    --c-leaf    lit face of 3D mark reference/MOVIO 1.jpg.jpeg           x=1338 y=666   k=8
+    --c-forest  shaded face of 3D   reference/MOVIO 1.jpg.jpeg           x=1452 y=390   k=8
+    --c-ink     page ground         reference/SAMPUL MOVIO JPG.jpg.jpeg  x=0    y=0     k=5
+    --c-surface panel ground        brand/LOGO MOVIO PNG.png            x=0    y=0     k=3
+    --c-line    maze stroke         reference/SAMPUL MOVIO JPG.jpg.jpeg  x=32   y=0     k=5
+    --c-text    body copy           reference/MOVIO 1.jpg.jpeg           x=258  y=524   k=12
+
+  Motion and shape values are measured from the reference stylesheet (topbar, dialog, cards,
+  fades) and are carried as numbers, never as copied rules.
+*/
+:root {
+  --c-lime: #bff68c;
+  --c-leaf: #89d042;
+  --c-forest: #3a6f17;
+  --c-ink: #02160a;
+  --c-surface: #16211b;
+  --c-line: #142d18;
+  --c-text: #d4e0d6;
+
+  /* derived from the sampled set only */
+  --bg: var(--c-ink);
+  --panel: color-mix(in srgb, var(--c-surface) 91%, transparent);
+  --panel-solid: var(--c-surface);
+  --panel-hi: color-mix(in srgb, var(--c-surface) 70%, var(--c-forest));
+  --hair: color-mix(in srgb, var(--c-lime) 17%, transparent);
+  --hair-strong: color-mix(in srgb, var(--c-lime) 34%, transparent);
+  --text: var(--c-text);
+  --muted: color-mix(in srgb, var(--c-text) 66%, var(--c-ink));
+  --faint: color-mix(in srgb, var(--c-text) 42%, var(--c-ink));
+  --accent: var(--c-lime);
+  --accent-ink: var(--c-ink);
+  --glow: color-mix(in srgb, var(--c-lime) 28%, transparent);
+  --shade: color-mix(in srgb, var(--c-ink) 55%, transparent);
+  --skeleton-a: color-mix(in srgb, var(--c-text) 7%, transparent);
+  --skeleton-b: color-mix(in srgb, var(--c-text) 15%, transparent);
+
+  /* type */
+  --font-body: "DM Sans Variable", "DM Sans", system-ui, sans-serif;
+  --font-head: "Space Grotesk Variable", "Space Grotesk", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  /* shape (reference: topbar 13, dialog 22, tile 8-12) */
+  --r-hud: 13px;
+  --r-hud-sm: 10px;
+  --r-dialog: 22px;
+  --r-card: 12px;
+  --r-tile: 10px;
+  --r-chip: 8px;
+  --blur: 16px;
+
+  /* layout (reference: hud edge, topbar min-height 68 / 61) */
+  --edge: 34px;
+  --hud-min: 68px;
+  --tap: 44px;
+  --maxw: 1180px;
+
+  /* motion (reference: 600ms fade, 400ms arrive, 150ms hover) */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-arrive: cubic-bezier(0.2, 0.7, 0.25, 1);
+  --ease-open: cubic-bezier(0.19, 0.8, 0.19, 1);
+  --t-fast: 150ms;
+  --t-arrive: 400ms;
+  --t-fade: 600ms;
+}
+
+@media (width <= 700px) {
+  :root { --edge: 16px; --hud-min: 61px; }
+}

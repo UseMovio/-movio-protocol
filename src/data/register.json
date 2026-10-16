@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "note": "One record per external fact. state is stated, absent or unconfirmed. Absent and unconfirmed records render inert and must not carry value or url. Dates live here as data only and never reach the page.",
+  "records": [
+    {
+      "id": "contract",
+      "label": "Mint address",
+      "kind": "address",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "kind": "social",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "kind": "social",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "chain",
+      "label": "Chain",
+      "kind": "text",
+      "state": "stated",
+      "value": "Solana",
+      "rpc": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "market-source",
+      "label": "Market feed",
+      "kind": "feed",
+      "state": "stated",
+      "value": "DexScreener",
+      "boosts": "https://api.dexscreener.com/token-boosts/top/v1",
+      "pairs": "https://api.dexscreener.com/tokens/v1/solana/",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "supply",
+      "label": "Supply",
+      "kind": "text",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "holders",
+      "label": "Holders",
+      "kind": "text",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "listing",
+      "label": "Listing",
+      "kind": "text",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-16"
+    }
+  ]
+}
